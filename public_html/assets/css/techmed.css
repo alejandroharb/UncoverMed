@@ -1,0 +1,196 @@
+.blurred-container-blog{
+  background-color: #000000;
+  position:relative;
+  width:100%;
+  height:540px;
+  top:0;
+  left:0;
+}
+
+.blurred-container-blog .img-src{
+    position: fixed;
+    width: 100%;
+    height: 540px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+
+.blurred-container-blog .img-src h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: transparent;
+    margin-top: 13%;
+    margin-left: 15%;
+    font-size: 84px;
+}
+
+.blurred-container-blog .img-src h3{
+    font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: transparent;
+    margin-left: 18%;
+}
+
+.main-blog{
+    background-color: #000000;
+    position: relative;
+}
+
+.main-raised{
+    background-color: white;
+    margin:-140px 90px 0px;
+    border-radius: 6px;
+    box-shadow:0 16px 24px 2px rgba(255, 255, 255, 0), 0 6px 30px 5px rgba(255, 255, 255, 0.44), 0 8px 10px -5px rgba(255, 255, 255, 0.2);
+}
+
+.article-pills li {
+  list-style-type: none;
+}
+
+.article-pills a{
+  display: block;
+  border-radius:20px;
+  color: black;
+  padding:10px 10px 40px 10px;
+  margin:10px;
+  text-decoration: none;
+}
+
+.article-pills img{
+  float:left;
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.article-pills h3, .article-pills h6, .article-pills p {
+  margin-left: 37%;
+  margin-top: 0;
+  color: black;
+}
+
+.article-pills a:visited{
+  font-color: #9e9e9e;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.article-pills a:hover {
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.article-pills a:focus {
+  background-color: #eeeeee;
+  border-color:transparent;
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+h6.coming-soon {
+  color: red;
+  font-size: 12px;
+}
+
+.blog-introduciton h1{
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+}
+.blog-introduciton p{
+  font-family: 'Poiret One', cursive;
+  max-width: 350px;
+  text-align: center;
+  margin: 15px auto;
+}
+
+footer {
+  background-color: #000000;
+  padding-top: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .main-raised {
+    background-color: white;
+    margin:-140px 0px 0px;
+    border-radius: 6px;
+  }
+  .blurred-container-blog .img-src h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: transparent;
+    margin-top: 17%;
+    margin-left: 10%;
+    font-size: 84px;
+  }
+
+.blurred-container-blog .img-src h3{
+    font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: transparent;
+    margin-left: 14%;
+  }
+  .article-pills a{
+  display: block;
+  border-radius:20px;
+  color: black;
+  padding:10px 10px 60px 10px;
+  margin:10px;
+  text-decoration: none;
+  }
+  .article-pills h3, .article-pills h6, .article-pills p{
+  margin-left: 40%;
+  margin-top: 0px;
+  color: black;
+  }
+}
+
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .main-raised {
+    background-color: white;
+    margin:-200px 0px 0px;
+    border-radius: 6px;
+  }
+  .blurred-container-blog .img-src h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: transparent;
+    margin-top: 25%;
+    margin-left: 15%;
+    font-size: 60px;
+  }
+
+  .blurred-container-blog .img-src h3{
+    font-family: 'Poiret One', cursive;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: transparent;
+    margin-left: 15%;
+    font-size: 25px;
+  }
+  .blog-introduciton h1{
+  font-size: 40px;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  }
+  .article-pills a{
+  display: block;
+  border-radius:20px;
+  color: black;
+  padding:10px 0px 60px 0px;
+  margin:10px;
+  text-decoration: none;
+  }
+  .article-pills img{
+  float: none;
+  display: block;
+  margin:5px auto;
+  }
+  .article-pills h3, .article-pills h6, .article-pills p{
+  margin-left: 3%;
+  margin-top: 0px;
+  color: black;
+  }
+}
+

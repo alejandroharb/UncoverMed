@@ -1,0 +1,53 @@
+.main {
+    background-color: #000000;
+}
+.subscribe .img-logo img{
+    margin-top:50px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    display: block;
+    position: relative;
+}
+
+.subscription-form {
+    display: block;
+    position: relative;
+    margin:0px auto;
+    width: 65%;
+}
+
+#mc_embed_signup{
+    display: block;
+    position: relative;
+    margin:0px auto;
+    text-align: center;
+    background:#000000;
+    color: #ffffff;
+    clear:left;
+    font:16px Helvetica,Arial,sans-serif;
+}
+
+#mc_embed_signup h2 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.mc-field-group {
+    margin:15px;
+}
+
+.subscription-form #content{
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+
+#mc-embedded-subscribe {
+    margin:15px auto 30px auto;
+}
+
+footer{
+    background-color: #000000;
+    padding-top: 20px;
+}

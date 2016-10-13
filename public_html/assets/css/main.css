@@ -1,0 +1,104 @@
+.uncovermed-container{
+    background: #ffffff;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(255, 255, 255);
+    padding-top:70px;
+    padding-bottom:90px;
+}
+
+.subtitle{
+    font-family: 'Bad Script', cursive;
+    color: #757575;
+    margin-top: 25px;
+    margin-bottom: 90px;
+}
+
+
+.description {
+    margin:20px;
+    max-width: 800px;
+}
+
+.description-name {
+    margin-top:20px;
+}
+
+.main .introduction img{
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.introduction{
+    margin-top:40px;
+}
+
+.introduction a:link{
+    color:#424242;
+}
+
+.introduction a:hover, .introduction a:focus{
+    color: #9e9e9e;
+}
+
+.transition-space1{
+    padding-bottom:10px;
+    background-color: rgba(245, 245, 245, 0.33);
+}
+.transition-space2{
+    padding-bottom:10px;
+    background-color: rgba(245, 245, 245, 0.33);
+}
+.transition-space3{
+    padding-bottom:10px;
+    background-color: rgba(245, 245, 245, 0.33);
+}
+
+.btn-blue {
+    background-color: #2196f3;
+    color: #FFF;
+    border-color: #3F51B5;
+}
+
+.website-btn {
+    display: block;
+    position: relative;
+    width: inherit;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: white;
+}
+.website-btn .btn-lg{
+    padding:15px 25px;
+}
+
+
+@media (min-width: 0px) and (max-width: 768px){
+    .bio h1 {
+        text-align: center;
+    }
+    .bio h4{
+        margin-top: 15px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .img-bio{
+        max-width:250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .description-name{
+        text-align: center;
+    }
+}
