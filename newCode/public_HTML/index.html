@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta property="og:site_name"    content="UncoverMed" />
     <meta property="og:type"         content="website" />
@@ -19,7 +20,8 @@
     <link rel="icon" type="image/png" href="assets/img/favicon/favicon-32.png">
     <title>UncoverMed</title>
 
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
 
     <!--     Fonts     -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -45,22 +47,50 @@
 </head>
 <body>
   <header>
-    <nav id=navbar>
-      <div class="brand">
-        <h1>Uncover Med</h1>
-      </div>
-      <div class="navbar-links">
-        <ul>
-          <li><a href="http://www.uncovermed.com">Home</a></li>
-          <li><a href="http://www.uncovermed.com/about">About</a></li>
-          <li><a href="http://www.uncovermed.com/">Archive</a></li>
-        </ul>
-      </div>
-      <ul class="navbar-right">
-        <li><a href="https://twitter.com/uncovermed" target="_blank" class="btn btn-simple"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="https://www.facebook.com/uncovermed/" target="_blank" class="btn btn-simple"><i class="fa fa-facebook-square"></i></a></li>
-        <li><a type="button" href="http://www.uncovermed.com/subscribe" target="_blank" class="btn btn-round btn-default">Subscribe</a></li>
-      </ul>
+    <nav class="navbar navbar-uncoverMed">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="navbar-brand" href="http://www.uncovermed.com">UncoverMed</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+                    <li class="active"><a href="http://www.uncovermed.com">Home</a></li>
+                    <li><a href="http://www.uncovermed.com/about">About</a></li>
+                    <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Archive <b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="http://www.uncovermed.com/economed">EconoMed</a></li>
+                            <li><a href="http://www.uncovermed.com/techmed">TechMed</a></li>
+                            <li><a href="http://www.uncovermed.com/developmed">DevelopMed</a></li>
+                            <li><a href="http://www.uncovermed.com/premed">PreMed</a></li>
+                          </ul>
+                    </li>
+                  </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="https://twitter.com/uncovermed" target="_blank" class="btn btn-simple"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.facebook.com/uncovermed/" target="_blank" class="btn btn-simple"><i class="fa fa-facebook-square"></i></a></li>
+              <li><a type="button" href="http://www.uncovermed.com/subscribe" target="_blank" class="btn btn-round btn-default">Subscribe</a></li>
+         </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
   </header>
+  <section>
+    <div class="container-fluid cover">
+    </div>
+  </section>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
