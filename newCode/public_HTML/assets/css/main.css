@@ -17,3 +17,16 @@
 	overflow: auto;
 	margin-top:-70px;
 }
+
+.brand-cover {
+	margin:0px auto;
+	text-align: center;
+}
+.brand-cover .brand {
+	font-size:30px;
+}
+
+.navbar-links {
+	display:inline-block;
+	text-align: center;
+}
