@@ -1,3 +1,6 @@
+body {
+    background-color: #eeeeee;
+}
 .navbar-uncoverMed {
 	background-color: #ffffff;
 	border:1px solid #e7e7e7;
@@ -33,7 +36,6 @@ nav a{
     float: left;
     display: block;
     text-align: center;
-    margin-top: 10px;
     margin-left: 70px;
 }
 .navbar-links li{
@@ -57,10 +59,26 @@ nav a{
 	margin:30px auto;
 }
 
+.main-content a{
+    color:#000;
+}
+
+.main-content a:hover{
+    text-decoration: none;
+}
+
 .main-presentation {
-	border-radius: 6px;
-	padding-top:15px;
-	min-height: 390px;
+    margin-top: 50px;
+    margin-bottom:50px;
+    border-radius: 6px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    min-height: 410px;
+}
+
+.main-presentation h2{
+    display: block;
+    height:70px;
 }
 
 .main-presentation:hover {
@@ -70,5 +88,51 @@ nav a{
 
 .main-presentation img {
 	width:200px;
+    margin-bottom:40px;
 	box-shadow: 1px 8px 30px #000;
+}
+
+.main-presentation p {
+    width:75%;
+    margin:20px auto;
+}
+
+.article-feature {
+    background-color: #fff;
+    box-shadow: -1px 6px 10px rgba(0, 0, 0, 0.33);
+    display: block;
+    margin:10px auto;
+    width:400px;
+    height: 400px;
+    border-radius: 6px;
+    border:1px solid #000;
+    overflow: auto;
+}
+
+.article-feature h4{
+    text-align: center;
+}
+.article-feature p{
+    font-size:13px;
+    text-align: justify;
+    margin:20px 15px 5px 15px;
+}
+.article-feature img{
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+footer {
+    height: 100px;
+    background-color: #333;
+    color:#fff;
+    clear:both;
+    bottom:0;
+    left:0;
+    right:0;
+    position: relative:;
+}
+
+.credits {
+    padding-top:1px;
 }
