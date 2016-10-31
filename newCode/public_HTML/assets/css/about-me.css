@@ -1,0 +1,148 @@
+body {
+    background-color: #000000;
+}
+.alex-container {
+    background: black;
+    width: 100%;
+    position: relative;
+    padding-bottom: 80px;
+    padding:60px;
+}
+
+.alex-container h1, .alex-container h2 , .alex-containerh3, .alex-container h4, .alex-container h5, .alex-container h6, .alex-container p{
+    color: white;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.alex-container .about-me {
+    font-family: 'Alegreya Sans', sans-serif;
+    margin: 30px auto;
+    max-width: 1000px;
+    text-align: justify;
+}
+
+.alex-container .about-me p {
+    font-size: 20px;
+    line-height: 1.42;
+    margin: 30px auto;
+}
+
+
+.alex-container .about-me img{
+    display: block;
+    position: relative;
+    margin: 10px auto;
+}
+
+.social-links{
+    text-align: center;
+}
+
+.alex-container .about-me .social-links .linked-in{
+    font-size:37px;
+}
+
+
+.alex-container .about-me .social-links a {
+    text-decoration: none;
+    font-size: 28px;
+    color:#FFFFFF;
+}
+.alex-container2 {
+    background-color: #ffffff;
+}
+
+.alex-container2 .about{
+    font-family: 'Alegreya Sans', sans-serif;
+    margin:0px auto;
+    font-size: 17px;
+    text-align: justify;
+    max-width:1000px;
+}
+.alex-container2 .about .title-transition-sec h1{
+    height: 60px;
+    width: 300px;
+    margin: -30px auto;
+    background-color: #FFFFFF;
+    position: relative;
+    display: block;
+    font: #000000;
+    border: 2px solid #000000;
+    border-radius: 12px;
+}
+
+.alex-container2 .about .content {
+    margin-top: 60px;
+}
+.alex-container2 .about h1{
+    font-family: 'Alegreya Sans', sans-serif;
+    text-align: center;
+}
+
+.alex-container2 .about h4{
+    font-family: 'Alegreya Sans', sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+
+.alex-container2 .about p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 20px;
+    margin: 30px auto;
+    line-height: 1.42;
+    padding:0 30px;
+}
+.material-icons {
+    font-size:40px;
+    margin-top:5px;
+}
+
+@media (min-width: 1020px) {
+.alex-container2 .about{
+        width: 950px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+.alex-container .social-links {
+    margin-left:65px;
+}
+}
+@media (min-width: 750px)and(max-width: 1020px){
+.alex-container2 .about {
+        width: 850px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+.alex-container2 .about p{
+        padding:0 60px;
+     }
+.alex-container .about-me p {
+    line-height: 1.142;
+    font-size: 14px;
+}
+.alex-container .social-links {
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+}
+}
+@media (min-width: 300px) and (max-width: 749px){
+    .alex-container{
+        padding:45px 10px;
+    }
+    .alex-container h6 {
+        font-size: 8px;
+    }
+    .alex-container .about-me p{
+        line-height: 150%;
+        font-size: 15px;
+        }
+     .alex-container .about-me img{
+        max-width: 100%;
+     }
+     .alex-container2 .about p{
+        padding:0 30px;
+        font-size:14px;
+        line-height: 150%;
+     }   
+}

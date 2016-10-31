@@ -1,0 +1,177 @@
+.top-banner-img {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top:0;
+    left: 0;
+}
+
+.top-banner-img .banner-img {
+    height: 400px;
+    position: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+.compact {
+    max-width: 350px;
+    margin:10px auto;
+}
+.main {
+    position: relative;
+}
+
+.publish-space .title {
+    text-align: center;
+    font-size: 45px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom:0px;
+    max-width: 900px;
+}
+
+.publish-space .subtitle {
+    color: gray;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.publish-space .article {
+    max-width: 90%;
+    margin-top:0px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+}
+
+.publish-space .article p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+    margin:30px auto;
+}
+
+.publish-space .indent {
+    margin-left: 80px;
+}
+
+
+blockquote {
+    font-size: 25px;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.img-right {
+    float: right;
+    margin-left: 20px;
+}
+
+.surgery-img {
+    margin-top: 10px;
+}
+
+.share-buttons {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 4%;
+}
+.share-buttons li{
+    display: inline-block;
+    position: relative;
+    margin:0px 10px;
+    vertical-align: middle;
+}
+
+.share-buttons .btn-fb {
+    background-color: #3B5998;
+    text-transform: uppercase;
+}
+
+.share-buttons .btn-tweet {
+    background-color:#55acee;
+    text-transform: uppercase;
+}
+
+.share-buttons .btn-linkedin {
+    background-color: #0077B5;
+    text-transform: uppercase;
+}
+
+.share-buttons a, .share-button a:hover, .share-button a:focus {
+    color: #ffffff;
+}
+
+.share-buttons .btn-lg {
+    margin:0px 5px;
+    padding: 14px 60px;
+    width: 100%;
+}
+
+.subscription .btn-subscribe {
+    display: block;
+    width: 25%;
+    margin:15px auto;
+    background-color: #9e9e9e;
+    text-transform:uppercase;
+}
+.subscription .btn-round.btn-lg {
+    padding:15px 30px;
+}
+
+.citation {
+    margin-top:30px;
+    margin-bottom: 80px;
+}
+.citation p{
+    font-size: 10px;
+}
+
+.no-display{
+    display: none;
+}
+
+@media (min-width: 0px) and (max-width: 768px){
+.publish-space .article {
+    max-width: 100%;
+    margin-top:0px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    }
+.share-buttons {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 5%;
+    }
+.share-buttons li{
+    display: inline-block;
+    position: relative;
+    margin:10px 10px;
+    }
+.share-buttons .btn-lg {
+    padding:14px 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1025px){
+.publish-space .article {
+    max-width: 95%;
+    margin-top:0px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    }
+.share-buttons li{
+    display: inline-block;
+    position: relative;
+    margin:0px 4px;
+    }
+.share-buttons .btn-lg {
+    padding:14px 50px;
+    }
+}
