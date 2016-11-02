@@ -44,8 +44,11 @@ nav a{
 }
 
 .navbar-links a{
-	margin:0px 25px;
+	margin:0px 20px;
 	color:#000;
+}
+.navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right:15px;
 }
 
 .btn-uncovermed {
@@ -143,6 +146,27 @@ footer {
     right: 0;
     z-index: 10000;
 }
+@media (min-width: 1145px) and (max-width:1200px){
+    .navbar-links li {
+        margin:0 20px;
+    }
+}
+@media (min-width: 1125px) and (max-width:1145px){
+    .navbar-links li {
+        margin:0 20px;
+    }
+}
+@media (min-width: 1101px) and (max-width:1125px){
+    .navbar-links li {
+        margin:0 18px;
+    }
+}
+@media (min-width: 1026px) and (max-width:1100px){
+    .navbar-links li {
+        margin:0 8px;
+    }
+}
+
 @media (min-width: 900px) and (max-width:1025px){
     .cover{
         background-color: #000;
@@ -162,7 +186,7 @@ footer {
         margin-left:50px;
     }
     .navbar-links li{
-        margin:5px 0;
+        margin:0;
     }
     .article-feature {
         width:300px;
