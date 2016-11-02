@@ -1,16 +1,9 @@
 body {
     background-color: #000000;
 }
- {
-    background: black;
-    width: 100%;
-    position: relative;
-    padding-bottom: 80px;
-    padding:60px;
-}
+
 
  h1,  h2 , h3,  h4,  h5,  h6,  p{
-    color: white;
     font-family: 'Alegreya Sans', sans-serif;
 }
 
@@ -38,12 +31,12 @@ body {
     text-align: center;
 }
 
- .about-me .social-links .linked-in{
+.social-links .linked-in{
     font-size:37px;
 }
 
 
- .about-me .social-links a {
+.social-links a {
     text-decoration: none;
     font-size: 28px;
     color:#FFFFFF;
