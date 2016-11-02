@@ -19,7 +19,7 @@ body{
     color: #777;
 }
 .article-display{
-	background-image: url('../img/arrow-up.jpeg');
+	background-image: url('../img/algorithms.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -56,5 +56,4 @@ body{
 .page-title p{
 	font-size: 16px;
     padding: 30px 20px;
-    font-weight:600;
 }
