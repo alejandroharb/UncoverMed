@@ -1,0 +1,100 @@
+body{
+	background-color:#eeeeee;
+}
+.navbar{
+    margin-bottom:3px;
+}
+.container-fluid {
+    background-color:#fff;
+}
+.brand h1{
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+    background-color: #ffffff;
+    color: #000;
+    font-size: 90px;
+    line-height: 77%;
+    margin:40px;
+}
+.navbar-uncoverMed {
+	background-color: #ffffff;
+	border-top:none;
+    border-bottom: 1px solid #e7e7e7;
+    height: 55px;
+    font-size: 20px;
+    color: #777;
+}
+.title{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size:60px;
+}
+.line-md{
+    width:70%;
+}
+.about-me img{
+    display:block;
+    position:relative;
+    margin:0 auto;
+    max-width:325px;
+}
+ .about-me {
+    font-family: 'Alegreya Sans', sans-serif;
+    margin: 10px auto;
+    max-width: 1000px;
+    text-align: justify;
+    margin-bottom:50px;
+}
+
+.about-me p{
+    font-size: 17px;
+    line-height: 150%;
+}
+.social-links{
+    text-align: center;
+}
+
+.social-links .linked-in{
+    font-size:37px;
+}
+
+
+.social-links a {
+    text-decoration: none;
+    font-size: 28px;
+    color:#000;
+}
+.about{
+    font-family: 'Alegreya Sans', sans-serif;
+    margin:0px auto;
+    font-size: 17px;
+    line-height: 150%;
+    text-align: justify;
+    max-width:800px;
+    margin-bottom:50px;
+}
+.about .title-transition-sec h3{
+    text-align: center;
+    font-size: 45px;
+    height: 60px;
+    width: 300px;
+    margin: -30px auto;
+    background-color: #FFFFFF;
+    position: relative;
+    display: block;
+    font: #000000;
+    border: 2px solid #000000;
+    border-radius: 12px;
+}
+.about .content {
+    margin-top: 60px;
+}
+}
+.about p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 20px;
+    margin: 30px auto;
+    line-height: 1.42;
+    padding:0 30px;
+}
+
+

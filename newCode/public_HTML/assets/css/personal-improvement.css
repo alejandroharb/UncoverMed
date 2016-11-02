@@ -19,7 +19,7 @@ body{
     color: #777;
 }
 .article-display{
-	background-image: url('../img/arrow-up.jpeg');
+	background-image: url('../img/identity.jpeg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -52,6 +52,7 @@ body{
 .page-title h4{
 	font-size: 34px;
 	color:#000;
+	padding-top:10px;
 }
 .page-title p{
 	font-size: 16px;
