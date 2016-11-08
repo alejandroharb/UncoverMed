@@ -31,6 +31,9 @@ nav a{
 .brand-cover .brand {
 	font-size:30px;
 }
+.brand a:hover{
+    text-decoration: none;
+}
 
 .navbar-links{
     float: left;
@@ -145,6 +148,11 @@ footer {
     left: 0;
     right: 0;
     z-index: 10000;
+}
+@media (min-width: 0px) and (max-width: 900px){
+    .navbar-links{
+        display: block;
+    }
 }
 @media (min-width: 1145px) and (max-width:1200px){
     .navbar-links li {
@@ -272,11 +280,8 @@ footer {
     .navbar-social{
         margin-top:-75px;
     }
-    .navbar-toggle {
-        background-color:#000;
-    }
     .navbar-toggle .icon-bar {
-        background-color:#ffffff;
+        background-color:#000;
     }
     .navbar-collapse{
         background-color:rgba(255, 255, 255, 0.9);
