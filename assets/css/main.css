@@ -7,11 +7,26 @@ nav .brand-logo{
 nav {
     height: 125px;
 }
+
+nav a {
+    color:#000;
+}
 nav ul a{
     color:#000;
 }
+main {
+    margin-top:25px;
+}
 .about{
     font-size: 2rem;
+}
+.btn-floating.btn-large{
+    width:100px;
+    height: 100px;
+}
+.icon-img {
+    width:70px;
+    margin-top:8px;
 }
 
 @media only screen and (min-width: 601px) {
