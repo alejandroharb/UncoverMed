@@ -20,7 +20,7 @@
 <body>
     <header>
     <!-- Top Navigation Bar, Transparent -->
-      <nav class="transparent">
+      <nav class="white">
         <div class="nav-wrapper">
           <a href="index.html" class="brand-logo center">Uncover<br>Med</a>
             <!-- activates mobile icon for slide-out nav bar -->
@@ -43,16 +43,81 @@
     </header>
     <main>
         <div class="container">
-          <div class="col s12 m3 l3">
-            <div>
-                <a class="btn-floating btn-large waves-effect waves-light grey lighten-1">
-                  <img src="assets/img/economic-investment.svg" class="responsive-img icon-img">
-                </a>
-
+          <!-- Section for Title of Topic Chosen. Hard Coded now, but needs Javascript -->
+          <div class="row">
+            <div class="col s12">
+              <div id="topic-title" class="center-align">
+                <h1>Economics</h1>
+              </div>
             </div>
+          </div>
+          <!-- Main Content Display Area -->
+          <div class="row">
+            <!-- ===============BUTTONS======================= -->
+            <div class="col s12 m3 l3">
+              <ul class="buttons">
+                  <li>
+                    <a class="btn-floating btn-large waves-effect waves-light white">
+                      <img src="assets/img/economic-investment.svg" class="responsive-img icon-img">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-floating btn-large waves-effect waves-light white">
+                      <img src="assets/img/intelligence-icon.svg" class="responsive-img icon-img">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-floating btn-large waves-effect waves-light white">
+                      <img src="assets/img/med-technology-icon.svg" class="responsive-img icon-img">
+                    </a>
+                  </li>
+                  <li>
+                    <a class="btn-floating btn-large waves-effect waves-light white">
+                      <img src="assets/img/student-icon.svg" class="responsive-img icon-img">
+                    </a>
+                  </li>
+              </ul>
+            </div>
+            <!-- ===========ECONOMICS Content================ -->
+            <div class="col s12 m9 l9 ">
+              <div class="economics-content center-align">
+
+                <div class="card main-article-display">
+                  <h2 class="main-article-title">Article Title</h2>
+                </div>
+              </div>
+            </div>
+            <!-- ===========TECH Content================ -->
+            <div class="col s12 m9 l9 hide">
+              <div class="economics-content center-align">
+
+                <div class="main-article-display">
+                  <h2 class="main-article-title">Article Title</h2>
+                </div>
+              </div>
+            </div>
+            <!-- ===========DEVELOPMENT Content================ -->
+            <div class="col s12 m9 l9 hide">
+              <div class="economics-content center-align">
+
+                <div class="main-article-display">
+                  <h2 class="main-article-title">Article Title</h2>
+                </div>
+              </div>
+            </div>
+            <!-- ===========PRE-MED Content================ -->
+            <div class="col s12 m9 l9 hide">
+              <div class="economics-content center-align">
+
+                <div class="main-article-display">
+                  <h2 class="main-article-title">Article Title</h2>
+                </div>
+              </div>
+            </div><!-- end content area -->
           </div>
         </div>
     </main>
+    <!-- Footer -->
     <footer class="page-footer center-align grey darken-1">
           <div class="container">
             <div class="row">
@@ -66,7 +131,7 @@
           <div class="footer-copyright">
             <div class="container">
               <div class="row">
-                <!-- attribution for economics icon -->
+                <!-- attribution for icons -->
                 <div class="col s12 text-lighten-4">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
               </div>
             </div>
