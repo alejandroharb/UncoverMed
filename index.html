@@ -25,10 +25,10 @@
           <a href="index.html" class="brand-logo center">Uncover<br>Med</a>
             <!-- activates mobile icon for slide-out nav bar -->
             <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul id="nav-mobile" class=" left hide-on-med-and-down nav-links">
+          <ul id="nav-mobile" class=" left -on-med-and-down nav-links">
             <li><a href="http://www.uncovermed.com" class="about">About</a></li>
           </ul>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <ul id="nav-mobile" class="right -on-med-and-down">
             <li><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
           </ul>
@@ -46,8 +46,7 @@
           <!-- Section for Title of Topic Chosen. Hard Coded now, but needs Javascript -->
           <div class="row">
             <div class="col s12">
-              <div id="topic-title" class="center-align">
-                <h1>Economics</h1>
+              <div id="topic-title" class="center-align"><h1>Economics</h1>
               </div>
             </div>
           </div>
@@ -57,60 +56,60 @@
             <div class="col s12 m3 l3">
               <ul class="buttons">
                   <li>
-                    <a class="btn-floating btn-large waves-effect waves-light white">
+                    <a id="econBtn" class="tooltipped btn-floating btn-large waves-effect waves-light orange darken-3" data-position = "left" data-delay = "50" data-tooltip = "Economics">
                       <img src="assets/img/economic-investment.svg" class="responsive-img icon-img">
                     </a>
                   </li>
                   <li>
-                    <a class="btn-floating btn-large waves-effect waves-light white">
-                      <img src="assets/img/intelligence-icon.svg" class="responsive-img icon-img">
-                    </a>
-                  </li>
-                  <li>
-                    <a class="btn-floating btn-large waves-effect waves-light white">
+                    <a id="techBtn" class="tooltipped btn-floating btn-large waves-effect waves-light blue darken-1" data-position = "left" data-delay = "50" data-tooltip = "Technology">
                       <img src="assets/img/med-technology-icon.svg" class="responsive-img icon-img">
                     </a>
                   </li>
                   <li>
-                    <a class="btn-floating btn-large waves-effect waves-light white">
+                    <a id="devBtn" class="tooltipped btn-floating btn-large waves-effect waves-light blue darken-1" data-position = "left" data-delay = "50" data-tooltip = "Improvement">
+                      <img src="assets/img/intelligence-icon.svg" class="responsive-img icon-img">
+                    </a>
+                  </li>
+                  <li>
+                    <a id="premedBtn" class="tooltipped btn-floating btn-large waves-effect waves-light blue darken-1" data-position = "left" data-delay = "50" data-tooltip = "PreMed">
                       <img src="assets/img/student-icon.svg" class="responsive-img icon-img">
                     </a>
                   </li>
               </ul>
             </div>
             <!-- ===========ECONOMICS Content================ -->
-            <div class="col s12 m9 l9 ">
-              <div class="economics-content center-align">
-
-                <div class="card main-article-display">
-                  <h2 class="main-article-title">Article Title</h2>
+            <div id="econContent" class="col s12 m9 l9 ">
+              <div class="card center-align">
+                <div class="card-image">
+                    <img src="assets/img/locked-door-medium.jpg">
+                  <span class="main-article-title">Why the AMA Hurts Medicine: A Case Study</span>
                 </div>
               </div>
             </div>
             <!-- ===========TECH Content================ -->
-            <div class="col s12 m9 l9 hide">
-              <div class="economics-content center-align">
-
-                <div class="main-article-display">
-                  <h2 class="main-article-title">Article Title</h2>
+            <div id="techContent" class="col s12 m9 l9 ">
+              <div class="card center-align">
+                <div class="card-image">
+                    <img src="assets/img/algorithms-medium.jpg">
+                  <span class="main-article-title">The Subtle and Remarkable Power of Medical Algorithms</span>
                 </div>
               </div>
             </div>
             <!-- ===========DEVELOPMENT Content================ -->
-            <div class="col s12 m9 l9 hide">
-              <div class="economics-content center-align">
-
-                <div class="main-article-display">
-                  <h2 class="main-article-title">Article Title</h2>
+            <div id="devContent" class="col s12 m9 l9 ">
+              <div class="card center-align">
+                <div class="card-image">
+                    <img src="assets/img/identity-medium.jpeg">
+                  <span class="main-article-title">The Identity Trap in Medicine</span>
                 </div>
               </div>
             </div>
             <!-- ===========PRE-MED Content================ -->
-            <div class="col s12 m9 l9 hide">
-              <div class="economics-content center-align">
-
-                <div class="main-article-display">
-                  <h2 class="main-article-title">Article Title</h2>
+            <div id="premedContent" class="col s12 m9 l9 ">
+              <div class="card center-align">
+                <div class="card-image">
+                    <img src="assets/img/arrow-up-medium.jpeg">
+                  <span class="main-article-title">Illusions When Choosing Medicine</span>
                 </div>
               </div>
             </div><!-- end content area -->
