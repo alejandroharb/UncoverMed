@@ -1,18 +1,24 @@
 $(document).ready(function(){
     // Initialize collapse button
+
+    // =======HOME PAGE=======
     $(".button-collapse").sideNav();
+    //executes to display economics content
     function initialDisplay(){
         clearContent('#techContent','#devContent','#premedContent')
         $('#econBtn').removeClass('grey darken-4').addClass('deep-orange darken-3');
         $('#econContent').show();
     };
+    //execute when page loads
     initialDisplay();
+    //resets all button colors to inactive, initial color
     function removeBtnsActiveColor(){
         $('#econBtn').removeClass('deep-orange darken-3').addClass('grey darken-4')
         $('#techBtn').removeClass('deep-orange darken-3').addClass('grey darken-4')
         $('#devBtn').removeClass('deep-orange darken-3').addClass('grey darken-4')
         $('#premedBtn').removeClass('deep-orange darken-3').addClass('grey darken-4')
     }
+    //hides topic content for the three other topics, expressed in parameters
     function clearContent(content1, content2, content3){
         $(content1).hide();
         $(content2).hide();
@@ -29,6 +35,7 @@ $(document).ready(function(){
         //displays content for topic clicked
         $(targetContentId).fadeIn(800);
     }
+    //click events for topic buttons
     $('#premedBtn').on('click', function(){
     	topicBtnClick('#premedBtn', '#premedContent', '#techContent','#econContent','#devContent')
     });
@@ -41,14 +48,7 @@ $(document).ready(function(){
     $('#techBtn').on('click', function(){
     	topicBtnClick('#techBtn', '#techContent', '#econContent','#devContent','#premedContent')
     });
-    // $('#techBtn').on('click', function(){
-    //     $('#topic-title').empty()
-    //     $('#topic-title').html('<h1>Technology</h1>')
-    //     removeBtnsActiveColor();
-    //     $('#techBtn').removeClass('blue darken-1').addClass('orange darken-3');
-    //     //switch content
-    //     clearContent('#econContent','#devContent','#premedContent');
-    //     $('#techContent').fadeIn('slow');
-    // });
+    // =======PUBLISH PAGE=======
+
 })
 

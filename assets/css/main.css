@@ -57,14 +57,8 @@ ul.buttons{
 .buttons a{
     margin:10px auto;
 }
-
-.main-article-display{
-    display: inline-block;
-    margin: 10px auto;
-    background-color: #006496;
-    width: 100%;
-    max-width: 630px;
-    height: 320px;
+.card{
+    max-width: 700px;
 }
 .main-article-title{
     font-family: 'Poiret One', cursive;
@@ -80,6 +74,7 @@ ul.buttons{
     padding: 24px;
     text-align: center;
 }
+
 #econContent, #techContent, #devContent, #premedContent{
     display:none;
 }
