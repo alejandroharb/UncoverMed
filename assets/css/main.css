@@ -22,13 +22,29 @@ h1{
     font-family: 'Playfair Display', serif;
 }
 #topic-title{
-    height:95px;
+    height:130px;
 }
 .about{
     font-size: 2rem;
 }
 .buttons{
     margin-top:-90px;
+}
+ul.buttons{
+    margin: 10px auto 10px auto;
+    display: table;
+    position: relative;
+}
+.buttons li{
+    margin:0 auto;
+    position: relative;
+    display: block;
+}
+.buttons p {
+    margin:0 auto;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
 }
 .btn-floating.btn-large{
     width:100px;
