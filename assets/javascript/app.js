@@ -33,7 +33,7 @@ $(document).ready(function(){
         //hides article content for other topics
         clearContent(otherId1, otherId2, otherId3);
         //displays content for topic clicked
-        $(targetContentId).fadeIn(800);
+        $(targetContentId).fadeIn('slow');
     }
     //click events for topic buttons
     $('#premedBtn').on('click', function(){
@@ -52,22 +52,33 @@ $(document).ready(function(){
 
     //article table of contents section
     $('.scrollspy').scrollSpy();
-    function removePanel (id,height) {
+    //removes the table of contents when user scrolls to citation section
+    function removePanel (id) {
         $(window).scroll(function(){
-          if ($(window).scrollTop() > height){
+        	var citationHeight = $('.citation').offset().top;
+          if ($(window).scrollTop() > citationHeight){
             $(id).addClass('hide');
           }
-          if ($(window).scrollTop() < height){
+          if ($(window).scrollTop() < citationHeight){
             $(id).removeClass('hide')
           }
         });
       };
-      removePanel(".panel-ama", 9380);
-      removePanel(".panel-identity",6200);
-      removePanel(".panel-illusions",5800);
-      removePanel(".panel-algorithms",5100);
+      //calling function for specific article
+      removePanel(".panel-ama");
+      removePanel(".panel-identity");
+      removePanel(".panel-illusions");
+      removePanel(".panel-algorithms");
+    //at page height, table of contents becomes fixed and moves down page as user scrolls
     $(window).scroll(function () {
-        console.log($(window).scrollTop())
+        if($(window).scrollTop() > 336){
+        	$('nav .brand-logo').css('color','#000');
+        	$('nav ul a').css('color', '#000');
+        }
+        if($(window).scrollTop() < 336){
+        	$('nav .brand-logo').css('color','#fff');
+        	$('nav ul a').css('color', '#fff');
+        }
         if ($(window).scrollTop() > 640){
           $('#info').addClass('panel-fixed');
         }
@@ -75,11 +86,15 @@ $(document).ready(function(){
           $('#info').removeClass('panel-fixed')
         }
       });
+    //when user scrolls to height of each 'chapter', table of contents is highlighted
+    //===========condense into function!!========= 
     $(window).scroll(function(){
           if ( $(window).scrollTop() > $("#ch1").offset().top) {
+          	//adds highlight class when scrolling past chapter
             $('#index1').addClass('highlight');
           }
           if ( $(window).scrollTop() < $("#ch1").offset().top) {
+          	//removes highlight from table of content index when scrolling above chapter
             $('#index1').removeClass('highlight');
           }
           if ( $(window).scrollTop() > $("#ch2").offset().top) {

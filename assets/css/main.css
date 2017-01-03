@@ -1,3 +1,7 @@
+body{
+    background-image: url('../img/subtle_white_feathers.png');
+    background-repeat: repeat;
+}
 nav .brand-logo{
     font-family: 'Playfair Display', serif;
     color:#000;
@@ -19,17 +23,29 @@ h1{
     margin:10px auto;
     font-family: 'Playfair Display', serif;
 }
+.display-area{
+    border-radius: 14px;
+    margin-top:15px;
+    margin-bottom:15px;
+    padding-bottom: 15px;
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
 #topic-title{
     height:130px;
 }
 .about{
     font-size: 2rem;
 }
+.button-space{
+    margin: 40px 0;
+    border-right: 2px solid gray;
+}
 .buttons{
     margin-top:-90px;
 }
 ul.buttons{
-    margin: 10px auto 10px auto;
+    margin: 0 auto;
     display: table;
     position: relative;
 }
@@ -45,18 +61,23 @@ ul.buttons{
     font-weight: 600;
 }
 .btn-floating.btn-large{
-    width:100px;
-    height: 100px;
+    width:80px;
+    height: 80px;
 }
 .icon-img {
-    width:70px;
-    margin-top:8px;
+    width:50px;
+    margin-top:14px;
 }
 .buttons a{
     margin:10px auto;
 }
 .card{
     max-width: 700px;
+    margin-right:40px;
+    margin-left: 25px;
+}
+.card .card-image img{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
 .main-article-title{
     font-family: 'Poiret One', cursive;

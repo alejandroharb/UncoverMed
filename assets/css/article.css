@@ -16,6 +16,7 @@ nav{
     right:0;
     left:0;
     z-index: 1000;
+    box-shadow: none!important;
 }
 nav .brand-logo{
 	color:white;
@@ -27,6 +28,8 @@ nav a{
 nav ul a{
 	color:white;
 }
+
+
 /*=============Banner Wallpaper================*/
 .top-banner-img{
 	position:relative;
