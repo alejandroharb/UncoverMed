@@ -11,6 +11,11 @@
 
 nav{
 	height: 64px;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index: 1000;
 }
 nav .brand-logo{
 	color:white;
@@ -31,20 +36,122 @@ nav ul a{
 	left:0;
 	right:0;
 }
-.banner-img{
+.top-banner-img img{
 	width: 100%;
     height: 400px;
     top: 0;
-    position: fixed;
+    position: relative;
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center center;
-    z-index: -1000;
 }
 /*======Article========= */
+
 .article-title{
 	text-align: center;
 	font-size: 45px;
 	margin:20px auto 0 auto;
 	max-width: 900px;
+}
+/*=About Author=*/
+.author{
+    width: 350px;
+    display: block;
+    margin:20px auto;
+}
+.author h2{
+    font-size:16px;
+    font-family: 'Poiret One', cursive;
+    margin:0 auto;
+}
+.author hr{
+    margin: 5px auto;
+}
+/*===Writing Space (publish-space)*/
+.publish-space h4{
+    font-size: 36px;
+}
+.publish-space h5{
+    font-size: 28px;
+}
+
+.publish-space .article {
+    max-width: 90%;
+    margin-top:0px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+
+.publish-space .article p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+    margin:30px auto;
+}
+
+.publish-space .indent {
+    margin-left: 80px;
+}
+
+
+blockquote {
+    font-size: 25px;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+/*==citation space==*/
+.citation {
+    margin-top:0;
+    margin-bottom: 30px;
+}
+.citation h3{
+    font-size: 24px;
+}
+.citation p{
+    font-size: 10px;
+}
+/*======share buttons======*/
+.share-buttons {
+    display: block;
+    text-align: center;
+}
+.share-buttons a{
+    display: block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.share-buttons .btn-fb {
+    background-color: #3B5998;
+    text-transform: uppercase;
+}
+
+.share-buttons .btn-tweet {
+    background-color:#55acee;
+    text-transform: uppercase;
+}
+
+.share-buttons .btn-linkedin {
+    background-color: #0077B5;
+    text-transform: uppercase;
+}
+
+.share-buttons a, .share-button a:hover, .share-button a:focus {
+    color: #ffffff;
+}
+/*=====Table of Contents=====*/
+.highlight{
+    border-left: 5px solid red;
+}
+.highlight a{
+    text-decoration: none;
+}
+.panel-fixed{
+    position:fixed;
+    top:60px;
+}
+.table-of-contents a.active, .table-of-contents a:hover {
+        border-left: none !important;
+        font-weight: 300;
+        padding-left:20px;
 }
