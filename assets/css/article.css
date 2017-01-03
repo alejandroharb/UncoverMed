@@ -8,6 +8,10 @@
 		color:#fff;
 	}
 }
+body{
+    background-color: white;
+    background-image: none!important;
+}
 
 nav{
 	height: 64px;

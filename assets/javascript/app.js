@@ -158,5 +158,18 @@ $(document).ready(function(){
             $('#index11').removeClass('highlight');
           }
     });
+  // comment section
+
+  $('#textarea1').trigger('autoresize');
+  // =============Database===========
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCGA3WPsXHNJ_bCQtW-qTt4gRsoQKYsDns",
+    authDomain: "uncovermed.firebaseapp.com",
+    databaseURL: "https://uncovermed.firebaseio.com",
+    storageBucket: "uncovermed.appspot.com",
+    messagingSenderId: "569716581191"
+  };
+  firebase.initializeApp(config);
 });
 
