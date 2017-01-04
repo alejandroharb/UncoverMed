@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>UncoverMed</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UncoverMed</title>
     
+    <!-- 
     <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="785115468288-8t3gb7ep8hpmk6fr0ka7lobmrf1go9t1.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="785115468288-8t3gb7ep8hpmk6fr0ka7lobmrf1go9t1.apps.googleusercontent.com"> -->
 
     <!-- importing Materialize font file -->
     <link href="assets/fonts/roboto/">
@@ -17,7 +18,7 @@
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Materialize CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/materialize.css">
     <!-- MAIN.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- publishing css -->
@@ -47,8 +48,8 @@
             <li><a href="http://www.uncovermed.com" class="about">About</a></li>
           </ul> -->
           <ul id="nav-mobile" class="right -on-med-and-down">
-            <li><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook fa-2x nav-icon" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter fa-2x nav-icon" aria-hidden="true"></i></a></li>
           </ul>
           <!-- links for slide-out nav bar for mobile display only -->
           <ul id= "slide-out" class="side-nav">
@@ -60,7 +61,7 @@
       </nav>
     </header>
     <!-- ========Main Article======== -->
-    <main class="main">
+    <main>
       <!-- article wallpaper banner -->
       <div class="top-banner-img">
         <img style="background-image:url('assets/img/algorithms.jpg')" class="banner-img">
@@ -70,144 +71,151 @@
       <div class="container">
         <div class="row">
         <!-- article TITLE -->
-          <div class="col s12 m12 l12">
+          <div class="col s12">
             <div class="article-title">
               <h1>The Subtle and Remarkable Power of Medical Algorithms</h1>
               <div class="author">
-                <hr>
                 <h2>By: <a href="https://www.linkedin.com/in/alejandroharb" target="_blank">Alejandro Harb</a></h2>
-                <hr>
             </div>
           </div>
         </div>
         <!-- Share buttons -->
-        <div class="row share-buttons">
-          <div class="col l4 m4 s4">
-            <!--Start Facebook Share Link Anchor-->
-            <a target="_blank" class="btn btn-sm btn-fill btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.uncovermed.com%2Farticle-algorithms.html&amp;src=sdkpreparse"><i class= "fa fa-facebook"> Share</i></a>
-          </div>
-          <div class="col l4 m4 s4">
-              <!--Start Twitter Share Link Anchor-->
-              <a target="_blank" role="button" class="btn btn-fill btn-sm btn-tweet" href="http://twitter.com/share?text=Share%20your%20thoughts!&url=http://www.uncovermed.com/article-algorithms.html&hashtags=healthcare,medicine,medtech&via=uncovermed"><i class="fa fa-twitter"> Tweet</i></a>
-          </div>
-          <div class="col l4 m4 s4">
-              <a target="_blank" role = "button" class="btn btn-fill btn-sm btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.uncovermed.com/article-algoritms.html&title=The%20Subtle%20and%20Remarkable%20Power%20of%20Medical%20Algorithms&summary=Both%20simple%20and%20complex%20algorithms%20are%20transforming%20medicine.&source=UncoverMed"><i class="fa fa-linkedin"> Share</i></a>
-          </div>
-        </div><!-- end Share Buttons -->
-        <!-- writing content area -->
-        <div class="row publish-space">
-          <div class="col s12 m8 l8 article">
-            <p><a id="ch1" class="section scrollspy"></a> people fall into two categories: (1) They underestimate the power of algorithms, or (2) they overestimate what an algorithm is.</p>
-
-            <p>Algorithms can be both astonishingly simple and incredibly complex. An algorithm is simply a set of instructions that take information and produce an answer <sub><a href="#1">1</a></sub>. Surprising to some, we use algorithms everyday: Following cooking recipes, driving directions, and furniture assembly instructions. People use sets of sequential steps everyday to accomplish tasks at work and at home.</p>
-
-            <p>The most powerful use for algorithms is to complete millions of repetitive tasks in seconds with the computing power of modern hardware. Indeed, the use of algorithms in this manner has transformed society. In the first half of the seventeenth century, mathematicians created primal calculators. Fast forward in time and advancements in the use of algorithms have permitted space travel or worldwide Internet connectivity.</p>
-
-            <p>Medicine has perhaps the greatest potential for technological innovation. CT scanning technology, EKG monitors, artificial lung machines, and telemedicine are a few of the thousands of life-saving technologies made possible through hardware and software technology. <a id="ch2" class="section scrollspy"></a> On-site physician can efficiently manage more than 8 Intensive Care Units (ICU) through a video monitor that displays real time data like vitals, notes, labs, meds, and X-rays.</p>
-
-            <h4>Simple Algorithms Transforming Medicine</h4>
-
-            <p>Simple algorithms can be powerful. Doctor and author Atul Gawande transformed aspects of medicine and surgery with the use of checklists. In the Checklist Manifesto, Gawande talks about errors of ineptitude in medicine, and how ubiquitous they are today. With the increasing complexity in professional tasks, humans face a perpetual challenge of properly using knowledge and abilities to be effective clinicians.</p>
-
-            <p>One reason for the complexity is the vast number of steps required to accomplish a procedure.<sup><a href="#2">2</a></sup> For example, in his New Yorker article, Gawande cites that critical care is incredibly complex, on average requiring 178 steps per day performed by different professionals for each patient.<sup><a href="#3">3</a></sup> The life threatening scenario of the patients’ extreme conditions and delicacy of every procedure leaves little margin for error.</p>
-
-            <p>The human mind is highly prone to errors of details, and people often cut corners underestimating the severity of the consequences. Gawande shows that by following a well-planned checklist, doctors, surgeons, and all medical professionals have been proven to give <a id="ch3" class="section scrollspy">optimal</a> care. The diligence of a simple algorithm like the checklist has systematically lowered complications and surgical infection rates.</p>
-
-            <h4>Algorithms and Computing Power</h4>
-
-            <p>The use of complex algorithms and computing power is advancing medicine exponentially. Three <a id="ch4" class="section scrollspy">cases</a> display the power of algorithms to innovate areas of Medicine and save lives:</p>
-              <h5 class="indent">Human Genome Sequencing & Personalized Medicine</h5>
-
-            <p>The Human Genome Project and its resulting genetic sequencing is innovating diagnostics and treatment options. The challenge with sequencing a human genome is to identify 100,000 genes, and solving the 3 billion base pairs in human DNA.</p>
-
-            <p>In scale, the challenge is to mass sequence human genomes in populations, and reliably storing the vast data. Biotech behemoth, Illumina, states that more than 228,000 human genomes have been sequenced and that the number will double every year to 1.6 million genomes completely sequenced by 2017!<sup><a href="#7">7</a></sup></p>
-
-            <p>The right algorithm has made feasible the sequencing of the human genome. The first algorithm used was a type called “divide and conquer,” with which large sections of the DNA were sequenced individually and reconstructed. Then, Gene Myers from <a target="_blank" href="http://www.berkeley.edu/news/media/releases/2002/10/29_Myers.html">Berkeley</a> cleverly created an algorithm modified from the well-known shotgun approach in DNA sequencing that combined algorithm efficiency and low error probability.</p>
-
-            <p>Finding an effective algorithm is making possible to sequence human genomes regularly at low prices and mass scales. In anticipation of the boom in genomic data, companies like Google, Amazon, Microsoft and Illumina are advancing towards creating a cloud database system that <a id="ch5" class="section scrollspy">would</a> allow for the retrieval of genomic data from anywhere with internet access.<sup><a href="#7">7</a></sup></p>
-
-                <h5 class="indent">Kidney Transplants: Matching Donors to Patients</h5>
-            <p>Today, more than <a target="_blank" href="http://www.lkdn.org/kidney_tx_waiting_list.html">93,000 people</a> are on the kidney transplant list, many waiting longer than 5 years and requiring daily dialysis treatment. In 2013, only about 16,000 were successfully matched.<sup><a href="#4">4</a></sup> That’s only 17% of people finding a kidney donor.</p>
-
-            <p>Since viable kidney matches depend on multiple variables, like blood types and antibody count (cPRA)<sup><a href="#5">5</a></sup>, the ability to optimally match a large pool of patients to donors is out of normal human capabilities.</p>
-
-            <p>An algorithm developed at Carnegie Mellon University matches terminal kidney failure patients with donors. A newly updated algorithm takes into account the probability of “last-minute failures” of the match, before the transplant surgery takes place.<sup><a href="#4">4</a></sup></p>
-
-            <p>The matching algorithm optimizes patient-donor matches by considering all compatible matches, computing multiple matching cycles, and determining the combinations that maximizes the number of total transplants. Furthermore, probabilistic models are included in the algorithm to minimize the chances for “last-minute failures.”</p>
-
-            <p>Since 2010, the Carnegie algorithm has been used by 142 transplant centers and conducts biweekly <a id="ch6" class="section scrollspy">match</a> runs.<sup><a href="#4">4</a></sup> The ability to create and use this algorithm has already saved thousands of lives.</p>
-
-            <h5 class="indent">Medical Imaging: X-rays and MRI scans</h5>
-
-            <p>Medical imaging is perhaps among the most interesting areas of innovation in information technology. Image recognition algorithms work by scanning the screen pixels in an image, and recognizing patterns in spacing and contrast. Algorithms have been designed to detect hard corners, color differences, and special patterns that allow it to zone into an area of interest.</p>
-
-            <p>IBM’s software, Avicenna, can read CT scans and patient records to detect abnormalities and help treat patients.<sup><a href="#6">6</a></sup> Algorithms can detect anatomical location, and identify abnormalities as specific as blood clots. Like a radiologist, Avicenna’s algorithms draw on the patient’s history, along with the medical images to present physicians with the most likely diagnoses and treatment options.<sup><a href="#6">6</a></sup></p>
-
-            <p>In 2015, IBM acquired Merge Healthcare and it’s billions of medical images, to construct a mass database that it’s deep learning technology uses to make accurate diagnoses. Avicenna is a tool that allows radiologists to expedite their work from hours to seconds and help minimize errors.</p>
-
-            <p>As the technological golden age treads on every industry, it can often be difficult to understand the underlying mechanics of this seemingly foreign tool. By keeping distance from its complexity, we can easily miss the appreciation for how transformative it is. There is great opportunity in understanding the algorithm’s effects in our lives, and the future of our jobs and industries as it develops and matures.</p>
-
-            <p>Checklists have shown to be a powerful tool for immediate use in clinical settings. The principles of simple algorithms can be used in diverse and dynamic situations, even as extreme as ICU’s. Computing power and algorithm design intersects medicine beautifully. Doctors like <a target="_blank" href="http://gazzaleylab.ucsf.edu/">Dr. Adam Gazzaley</a> are embracing the use of algorithms through video game design for improving cognitive abilities in patients.</p>
-
-            <p>There’s great opportunity for physicians, researchers and other clinicians to partner with teams to innovating delivery of care, or improving clinical performance and efficiency. As for me, and many other technology creators, we look forward to teaming with clinical innovators to extend the reach of Medicine.</p>
-          </div>
-          <!-- table of contents: materialize scrollspy -->
-          <div class="col hide-on-small-only m4 l4">
-            <ul class="section table-of-contents panel-algorithms" id="info">
-                <li id="index1" ><a href="#ch1">Introduction</a></li>
-                <li id="index2" ><a href="#ch2">Simple Algorithms Transforming Medicine</a></li>
-                <li id="index3" ><a href="#ch3">Algorithms and Computing Power</a></li>
-                <li id="index4" ><a href="#ch4">i. Human Genome Sequencing & Personalized Medicine</a></li>
-                <li id="index5" ><a href="#ch5">ii.Kidney Transplants: Matching Donors to Patients</a></li>
-                <li id="index6" ><a href="#ch6">iii. Medical Imaging: X-rays and MRI scans</a></li>
-              </ul>
-          </div>
-          <!-- Works Cited -->
-          <div class="col s12 m8 l8 citation">
-            <h3>Citations</h3>
-            <p><a id="1">1.</a> Cormen, Thomas H., Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein. Introduction to Algorithms. 2nd ed. Cambridge, MA: MIT, 2001. Print.</p>
-
-            <p><a id="2">2.</a> Gawande, Atul. The Checklist Manifesto: How to Get Things Right. N.p.: Picador, 2011. Print.</p>
-
-            <p><a id="3">3.</a> Gawande, Atul. “The Checklist.” Annals of Medicine. 10 Dec. 2007. Web.</p>
-
-            <p><a id="4">4.</a> John P. Dickerson, Ariel D. Procaccia, Tuomas Sandholm. Failure-Aware Kidney Exchange. Computer Science Department, Carnegie Mellon University, Pittsburgh, PA 15213.</p>
-
-            <p><a id="5">5.</a> “Compatible Pairs.” National Kidney Registry. Acc. 21 Oct. 2016. Web.</p>
-
-            <p><a id="6">6.</a>  Simonite, Tom. “IBM’s Automated Radiologist Can Read Images and Medical Records.” MIT Technology Review. 4 Feb. 2016. Acc. 21 Oct. 2016.</p>
-
-            <p><a id="7">7.</a> Regalado, Antonio. “EmTech: Illumina Says 228,000 Human Genomes Will be Sequenced This Year.” MIT Technology Review. Pub. 24 Sep. 2014. Acc. 24 Oct. 2016. Web.</p>
-          </div>
-          <!-- Comment Section -->
-           <div class="row">
-              <form class="col s12">
-                <h4>Leave a Comment</h4>
-                <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                <div class="row">
-                  <div class="col s6">
-                    <label for="name">Name</label>
-                    <input placeholder="Edmund Freud" id="name" type="text" class="validate">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="input-field col s12">
-                    <label for="commentArea">Textarea</label>
-                    <textarea id="commentArea" class="materialize-textarea" placeholder="Your comment goes here"></textarea>
-                    <button class="waves-effect waves-light btn deep-orange darken-3" id="add-comment" type="submit"><i class="material-icons">comment </i>Submit</button>
-                  </div>
-                </div>
-              </form>
-              <div class="row">
-                <div class="col s12">
-                  <h5>Comments: </h5>
-                </div>
-              </div>
-              <div class="row ">
-                <div class="col s12 m8 l8 commentDiv" id="commentDisplay">
-                </div>
-              </div>
+        <div class="container">
+          <div class="row share-buttons">
+            <div class="col s4">
+              <!--Start Facebook Share Link Anchor-->
+              <a target="_blank" class="btn btn-sm btn-fill btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.uncovermed.com%2Farticle-algorithms.html&amp;src=sdkpreparse"><i class= "fa fa-facebook"> Share</i></a>
             </div>
+            <div class="col s4">
+                <!--Start Twitter Share Link Anchor-->
+                <a target="_blank" role="button" class="btn btn-fill btn-sm btn-tweet" href="http://twitter.com/share?text=Share%20your%20thoughts!&url=http://www.uncovermed.com/article-algorithms.html&hashtags=healthcare,medicine,medtech&via=uncovermed"><i class="fa fa-twitter"> Tweet</i></a>
+            </div>
+            <div class="col s4">
+                <a target="_blank" role = "button" class="btn btn-fill btn-sm btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.uncovermed.com/article-algoritms.html&title=The%20Subtle%20and%20Remarkable%20Power%20of%20Medical%20Algorithms&summary=Both%20simple%20and%20complex%20algorithms%20are%20transforming%20medicine.&source=UncoverMed"><i class="fa fa-linkedin"> Share</i></a>
+            </div>
+          </div><!-- end Share Buttons -->
+        </div>
+        <!-- writing content area -->
+        <div class="container">
+          <div class="row publish-space">
+            <div class="col s12 m8 l8 article">
+              <p><a id="ch1" class="section scrollspy"></a> people fall into two categories: (1) They underestimate the power of algorithms, or (2) they overestimate what an algorithm is.</p>
+
+              <p>Algorithms can be both astonishingly simple and incredibly complex. An algorithm is simply a set of instructions that take information and produce an answer <sub><a href="#1">1</a></sub>. Surprising to some, we use algorithms everyday: Following cooking recipes, driving directions, and furniture assembly instructions. People use sets of sequential steps everyday to accomplish tasks at work and at home.</p>
+
+              <p>The most powerful use for algorithms is to complete millions of repetitive tasks in seconds with the computing power of modern hardware. Indeed, the use of algorithms in this manner has transformed society. In the first half of the seventeenth century, mathematicians created primal calculators. Fast forward in time and advancements in the use of algorithms have permitted space travel or worldwide Internet connectivity.</p>
+
+              <p>Medicine has perhaps the greatest potential for technological innovation. CT scanning technology, EKG monitors, artificial lung machines, and telemedicine are a few of the thousands of life-saving technologies made possible through hardware and software technology. <a id="ch2" class="section scrollspy"></a> On-site physician can efficiently manage more than 8 Intensive Care Units (ICU) through a video monitor that displays real time data like vitals, notes, labs, meds, and X-rays.</p>
+
+              <h4>Simple Algorithms Transforming Medicine</h4>
+
+              <p>Simple algorithms can be powerful. Doctor and author Atul Gawande transformed aspects of medicine and surgery with the use of checklists. In the Checklist Manifesto, Gawande talks about errors of ineptitude in medicine, and how ubiquitous they are today. With the increasing complexity in professional tasks, humans face a perpetual challenge of properly using knowledge and abilities to be effective clinicians.</p>
+
+              <p>One reason for the complexity is the vast number of steps required to accomplish a procedure.<sup><a href="#2">2</a></sup> For example, in his New Yorker article, Gawande cites that critical care is incredibly complex, on average requiring 178 steps per day performed by different professionals for each patient.<sup><a href="#3">3</a></sup> The life threatening scenario of the patients’ extreme conditions and delicacy of every procedure leaves little margin for error.</p>
+
+              <p>The human mind is highly prone to errors of details, and people often cut corners underestimating the severity of the consequences. Gawande shows that by following a well-planned checklist, doctors, surgeons, and all medical professionals have been proven to give <a id="ch3" class="section scrollspy">optimal</a> care. The diligence of a simple algorithm like the checklist has systematically lowered complications and surgical infection rates.</p>
+
+              <h4>Algorithms and Computing Power</h4>
+
+              <p>The use of complex algorithms and computing power is advancing medicine exponentially. Three <a id="ch4" class="section scrollspy">cases</a> display the power of algorithms to innovate areas of Medicine and save lives:</p>
+                <h5 class="indent">Human Genome Sequencing & Personalized Medicine</h5>
+
+              <p>The Human Genome Project and its resulting genetic sequencing is innovating diagnostics and treatment options. The challenge with sequencing a human genome is to identify 100,000 genes, and solving the 3 billion base pairs in human DNA.</p>
+
+              <p>In scale, the challenge is to mass sequence human genomes in populations, and reliably storing the vast data. Biotech behemoth, Illumina, states that more than 228,000 human genomes have been sequenced and that the number will double every year to 1.6 million genomes completely sequenced by 2017!<sup><a href="#7">7</a></sup></p>
+
+              <p>The right algorithm has made feasible the sequencing of the human genome. The first algorithm used was a type called “divide and conquer,” with which large sections of the DNA were sequenced individually and reconstructed. Then, Gene Myers from <a target="_blank" href="http://www.berkeley.edu/news/media/releases/2002/10/29_Myers.html">Berkeley</a> cleverly created an algorithm modified from the well-known shotgun approach in DNA sequencing that combined algorithm efficiency and low error probability.</p>
+
+              <p>Finding an effective algorithm is making possible to sequence human genomes regularly at low prices and mass scales. In anticipation of the boom in genomic data, companies like Google, Amazon, Microsoft and Illumina are advancing towards creating a cloud database system that <a id="ch5" class="section scrollspy">would</a> allow for the retrieval of genomic data from anywhere with internet access.<sup><a href="#7">7</a></sup></p>
+
+                  <h5 class="indent">Kidney Transplants: Matching Donors to Patients</h5>
+              <p>Today, more than <a target="_blank" href="http://www.lkdn.org/kidney_tx_waiting_list.html">93,000 people</a> are on the kidney transplant list, many waiting longer than 5 years and requiring daily dialysis treatment. In 2013, only about 16,000 were successfully matched.<sup><a href="#4">4</a></sup> That’s only 17% of people finding a kidney donor.</p>
+
+              <p>Since viable kidney matches depend on multiple variables, like blood types and antibody count (cPRA)<sup><a href="#5">5</a></sup>, the ability to optimally match a large pool of patients to donors is out of normal human capabilities.</p>
+
+              <p>An algorithm developed at Carnegie Mellon University matches terminal kidney failure patients with donors. A newly updated algorithm takes into account the probability of “last-minute failures” of the match, before the transplant surgery takes place.<sup><a href="#4">4</a></sup></p>
+
+              <p>The matching algorithm optimizes patient-donor matches by considering all compatible matches, computing multiple matching cycles, and determining the combinations that maximizes the number of total transplants. Furthermore, probabilistic models are included in the algorithm to minimize the chances for “last-minute failures.”</p>
+
+              <p>Since 2010, the Carnegie algorithm has been used by 142 transplant centers and conducts biweekly <a id="ch6" class="section scrollspy">match</a> runs.<sup><a href="#4">4</a></sup> The ability to create and use this algorithm has already saved thousands of lives.</p>
+
+              <h5 class="indent">Medical Imaging: X-rays and MRI scans</h5>
+
+              <p>Medical imaging is perhaps among the most interesting areas of innovation in information technology. Image recognition algorithms work by scanning the screen pixels in an image, and recognizing patterns in spacing and contrast. Algorithms have been designed to detect hard corners, color differences, and special patterns that allow it to zone into an area of interest.</p>
+
+              <p>IBM’s software, Avicenna, can read CT scans and patient records to detect abnormalities and help treat patients.<sup><a href="#6">6</a></sup> Algorithms can detect anatomical location, and identify abnormalities as specific as blood clots. Like a radiologist, Avicenna’s algorithms draw on the patient’s history, along with the medical images to present physicians with the most likely diagnoses and treatment options.<sup><a href="#6">6</a></sup></p>
+
+              <p>In 2015, IBM acquired Merge Healthcare and it’s billions of medical images, to construct a mass database that it’s deep learning technology uses to make accurate diagnoses. Avicenna is a tool that allows radiologists to expedite their work from hours to seconds and help minimize errors.</p>
+
+              <p>As the technological golden age treads on every industry, it can often be difficult to understand the underlying mechanics of this seemingly foreign tool. By keeping distance from its complexity, we can easily miss the appreciation for how transformative it is. There is great opportunity in understanding the algorithm’s effects in our lives, and the future of our jobs and industries as it develops and matures.</p>
+
+              <p>Checklists have shown to be a powerful tool for immediate use in clinical settings. The principles of simple algorithms can be used in diverse and dynamic situations, even as extreme as ICU’s. Computing power and algorithm design intersects medicine beautifully. Doctors like <a target="_blank" href="http://gazzaleylab.ucsf.edu/">Dr. Adam Gazzaley</a> are embracing the use of algorithms through video game design for improving cognitive abilities in patients.</p>
+
+              <p>There’s great opportunity for physicians, researchers and other clinicians to partner with teams to innovating delivery of care, or improving clinical performance and efficiency. As for me, and many other technology creators, we look forward to teaming with clinical innovators to extend the reach of Medicine.</p>
+            </div>
+            <!-- table of contents: materialize scrollspy -->
+            <div class="col hide-on-small-only m4 l4">
+              <ul class="section table-of-contents panel-algorithms" id="info">
+                  <li id="index1" ><a href="#ch1">Introduction</a></li>
+                  <li id="index2" ><a href="#ch2">Simple Algorithms Transforming Medicine</a></li>
+                  <li id="index3" ><a href="#ch3">Algorithms and Computing Power</a></li>
+                  <li id="index4" ><a href="#ch4">i. Human Genome Sequencing & Personalized Medicine</a></li>
+                  <li id="index5" ><a href="#ch5">ii.Kidney Transplants: Matching Donors to Patients</a></li>
+                  <li id="index6" ><a href="#ch6">iii. Medical Imaging: X-rays and MRI scans</a></li>
+                </ul>
+            </div>
+            <!-- Works Cited -->
+            <div class="col s12 m8 l8 citation">
+              <h3>Citations</h3>
+              <p><a id="1">1.</a> Cormen, Thomas H., Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein. Introduction to Algorithms. 2nd ed. Cambridge, MA: MIT, 2001. Print.</p>
+
+              <p><a id="2">2.</a> Gawande, Atul. The Checklist Manifesto: How to Get Things Right. N.p.: Picador, 2011. Print.</p>
+
+              <p><a id="3">3.</a> Gawande, Atul. “The Checklist.” Annals of Medicine. 10 Dec. 2007. Web.</p>
+
+              <p><a id="4">4.</a> John P. Dickerson, Ariel D. Procaccia, Tuomas Sandholm. Failure-Aware Kidney Exchange. Computer Science Department, Carnegie Mellon University, Pittsburgh, PA 15213.</p>
+
+              <p><a id="5">5.</a> “Compatible Pairs.” National Kidney Registry. Acc. 21 Oct. 2016. Web.</p>
+
+              <p><a id="6">6.</a>  Simonite, Tom. “IBM’s Automated Radiologist Can Read Images and Medical Records.” MIT Technology Review. 4 Feb. 2016. Acc. 21 Oct. 2016.</p>
+
+              <p><a id="7">7.</a> Regalado, Antonio. “EmTech: Illumina Says 228,000 Human Genomes Will be Sequenced This Year.” MIT Technology Review. Pub. 24 Sep. 2014. Acc. 24 Oct. 2016. Web.</p>
+            </div>
+            <!-- Comment Section -->
+            <div class="container">
+             <div class="row">
+                <form class="col s12">
+                  <h4>Leave a Comment</h4>
+                  <!-- google sign-in button -->
+                  <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+                  <div class="row">
+                    <div class="col s6">
+                      <label for="name">Name</label>
+                      <input placeholder="Edmund Freud" id="name" type="text" class="validate">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <label for="commentArea">Textarea</label>
+                      <textarea id="commentArea" class="materialize-textarea" placeholder="Your comment goes here"></textarea>
+                      <button class="waves-effect waves-light btn deep-orange darken-3" id="add-comment" type="submit"><i class="material-icons">comment </i>Submit</button>
+                    </div>
+                  </div>
+                </form>
+             </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                  <div class="col s12">
+                    <h5>Comments: </h5>
+                  </div>
+                </div>
+                <div class="row ">
+                  <div class="col s12 m8 l8 commentDiv" id="commentDisplay">
+                  </div>
+                </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -223,7 +231,7 @@
             </div>
           </div>
         </footer>
-        
+
     <!-- Main Javascript -->
     <script src="assets/javascript/app.js" type="text/javascript"></script>
 

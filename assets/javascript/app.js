@@ -61,6 +61,7 @@ $(document).ready(function(){
   firebase.initializeApp(config);
   //user authentication
   var provider = new firebase.auth.GoogleAuthProvider();
+  var provider = new firebase.auth.FacebookAuthProvider();
   //Google API
   function onSignIn(googleUser) {
         // Useful data for your client-side scripts:
@@ -82,7 +83,6 @@ $(document).ready(function(){
 	  // This gives you a Google Access Token. You can use it to access the Google API.
 	  var token = result.credential.accessToken;
 	  // The signed-in user info.
-	  onSignIn(token);
 	  var user = result.user;
 	  // ...
 	}).catch(function(error) {
@@ -161,10 +161,12 @@ $(document).ready(function(){
         if($(window).scrollTop() > 336){
         	$('nav .brand-logo').css('color','#000');
         	$('nav ul a').css('color', '#000');
+        	$('nav a').css('color', '#000');
         }
         if($(window).scrollTop() < 336){
         	$('nav .brand-logo').css('color','#fff');
         	$('nav ul a').css('color', '#fff');
+        	$('nav a').css('color', '#fff');
         }
         if ($(window).scrollTop() > 640){
           $('#info').addClass('panel-fixed');

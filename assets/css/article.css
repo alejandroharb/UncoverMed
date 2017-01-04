@@ -1,19 +1,20 @@
-/*==========Navigation Bar Features==================*/
-@media only screen and (min-width: 601px){
-	nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-		height: 64px;
-	}
-	nav .brand-logo{
-		font-size:2.5rem;
-		color:#fff;
-	}
+h1,h2,h3,h4,h5,h5{
+    font-weight: 500;
 }
+@media only screen and (min-width: 993px){
+    .container {
+        width: 85%;
+    }
+}
+/*==========Navigation Bar Features==================*/
+
 body{
     background-color: white;
     background-image: none!important;
 }
 
 nav{
+    display: block !important;
 	height: 64px;
     position: fixed;
     top:0;
@@ -23,7 +24,7 @@ nav{
     box-shadow: none!important;
 }
 nav .brand-logo{
-	color:white;
+	display:none !important;
 }
 nav a{
 	color:white;
@@ -32,13 +33,37 @@ nav a{
 nav ul a{
 	color:white;
 }
+.side-nav a{
+    color:#000 !important;
+}
+@media only screen and (min-width: 312px){
+    .nav-icon{
+        margin-top:12px;
+    }
+}
+@media only screen and (min-width: 601px){
+    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+        height: 64px;
+    }
+    .nav-icon{
+        margin-top:0px;
+    }
 
-
+}
+@media only screen and (min-width: 992px){
+    nav .brand-logo{
+        display:block;
+        font-size:2.5rem;
+        color:#fff;
+    }
+    .nav-icon{
+        margin-top:0px;
+    }
+}
 /*=============Banner Wallpaper================*/
 .top-banner-img{
 	position:relative;
 	width:100%;
-	height: 400px;
 	top:0;
 	left:0;
 	right:0;
@@ -52,6 +77,18 @@ nav ul a{
     background-size: cover;
     background-position: center center;
 }
+@media (min-width: 0px) and (max-width: 737px){
+    .top-banner-img{
+        position:relative;
+        width:100%;
+        top:0;
+        left:0;
+        right:0;
+    }
+    .top-banner-img img{
+        height: 175px;
+    }
+}
 /*======Article========= */
 
 .article-title{
@@ -62,18 +99,30 @@ nav ul a{
 }
 /*=About Author=*/
 .author{
-    width: 350px;
     display: block;
     margin:20px auto;
 }
 .author h2{
-    font-size:16px;
+    width: 40%;
+    font-size: 14px;
     font-family: 'Poiret One', cursive;
-    margin:0 auto;
+    margin: 0 auto;
+    border-top: 1px solid #9E9E9E;
+    border-bottom: 1px solid #9E9E9E;
+    padding: 5px 0;
 }
-.author hr{
-    margin: 5px auto;
+@media (min-width: 0px) and (max-width: 737px){
+    h1{
+        font-size: 2.2rem;
+    }
+    .author h2{
+        font-size: 12px;
+    }
+    .fa{
+        display:block !important;
+    }
 }
+
 /*===Writing Space (publish-space)*/
 .publish-space h4{
     font-size: 32px;
@@ -81,7 +130,6 @@ nav ul a{
 .publish-space h5{
     font-size: 24px;
 }
-
 
 .publish-space .article p{
     text-align: justify;
@@ -97,6 +145,21 @@ nav ul a{
 blockquote {
     font-size: 25px;
     font-family: 'Alegreya Sans', sans-serif;
+}
+@media only screen and (min-width: 319px){
+    h4{
+        font-size: 28px;
+    }
+    .publish-space .article p{
+        font-size: 1.4rem;
+    }
+    .publish-space h5 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .publish-space .indent {
+        margin-left: 40px;
+    }
 }
 /*==citation space==*/
 .citation {

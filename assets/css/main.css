@@ -41,6 +41,34 @@ h1{
     margin: 40px 0;
     border-right: 2px solid gray;
 }
+.button-space-mobile{
+    display:none;
+}
+@media (min-width: 0) and (max-width: 737px){
+    .button-space-mobile{
+        display:block;
+        margin-top: 16px;
+    }
+    .button-space-mobile .btn-floating.btn-large{
+        width: 50px;
+        height: 50px;
+    }
+    .button-space-mobile .icon-img {
+        width:35px;
+        margin-top:7px;
+    }
+    .button-space-mobile p{
+        font-size: 11px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .button-space{
+        display:none;
+    }
+    h1{
+        font-size: 3.2rem;
+    }
+}
 .buttons{
     margin-top:-90px;
 }
