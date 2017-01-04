@@ -48,6 +48,93 @@ $(document).ready(function(){
     $('#techBtn').on('click', function(){
     	topicBtnClick('#techBtn', '#techContent', '#econContent','#devContent','#premedContent')
     });
+
+      //==================Comment section============
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCGA3WPsXHNJ_bCQtW-qTt4gRsoQKYsDns",
+    authDomain: "uncovermed.firebaseapp.com",
+    databaseURL: "https://uncovermed.firebaseio.com",
+    storageBucket: "uncovermed.appspot.com",
+    messagingSenderId: "569716581191"
+  };
+  firebase.initializeApp(config);
+  //user authentication
+  var provider = new firebase.auth.GoogleAuthProvider();
+  //Google API
+  function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      };
+
+  //sign in google with popup window
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+	  // This gives you a Google Access Token. You can use it to access the Google API.
+	  var token = result.credential.accessToken;
+	  // The signed-in user info.
+	  onSignIn(token);
+	  var user = result.user;
+	  // ...
+	}).catch(function(error) {
+	  // Handle Errors here.
+	  var errorCode = error.code;
+	  var errorMessage = error.message;
+	  // The email of the user's account used.
+	  var email = error.email;
+	  // The firebase.auth.AuthCredential type that was used.
+	  var credential = error.credential;
+	  // ...
+	});
+
+  //comment submit
+  $('#commentArea').trigger('autoresize');
+  // =============Database===========
+  
+  //reference to database
+  var database = firebase.database();
+  //click event for form submit button
+  $('#add-comment').on('click', function(){
+  	//stores comment text
+  	var comment = $('#commentArea').val().trim();
+  	//stores name text
+  	var name = $('#name').val().trim();
+  	//references comment node in Database
+  	var ref = database.ref('comments');
+  	//send a new child node to referenced database
+  	ref.push({
+  		name:name,
+  		comment: comment
+  	});
+
+  	//restore input fields to blank
+  	$('#name').val('');
+  	$('#commentArea').val('');
+  	//prevents html page from reloading after submitting form
+  	return false;
+  });
+  //references comments database node
+  var commentsRef = database.ref('comments');
+  //function listens to any child added to node reference
+  commentsRef.on('child_added', function(data){
+  	//stores data variables from database
+  	var comment = data.val().comment;
+  	var name = data.val().name;
+  	//prepends name and comment onto #commentDisplay field of page
+  	$('#commentDisplay').prepend('<div class="userName">'+name+'</div><div class="commentSection">'+comment+'</div>');
+  },function(errorObject) {//error handler
+	console.log('Errors handled: '+ errorObject.code);
+	});
+
     // =======PUBLISH PAGE=======
 
     //article table of contents section
@@ -58,12 +145,12 @@ $(document).ready(function(){
         	var citationHeight = $('.citation').offset().top;
           if ($(window).scrollTop() > citationHeight){
             $(id).addClass('hide');
-          }
-          if ($(window).scrollTop() < citationHeight){
-            $(id).removeClass('hide')
-          }
+          };
+          if ( $(window).scrollTop() < citationHeight){
+            $(id).removeClass('hide');
+          };
         });
-      };
+     };
       //calling function for specific article
       removePanel(".panel-ama");
       removePanel(".panel-identity");
@@ -158,18 +245,6 @@ $(document).ready(function(){
             $('#index11').removeClass('highlight');
           }
     });
-  // comment section
 
-  $('#textarea1').trigger('autoresize');
-  // =============Database===========
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCGA3WPsXHNJ_bCQtW-qTt4gRsoQKYsDns",
-    authDomain: "uncovermed.firebaseapp.com",
-    databaseURL: "https://uncovermed.firebaseio.com",
-    storageBucket: "uncovermed.appspot.com",
-    messagingSenderId: "569716581191"
-  };
-  firebase.initializeApp(config);
 });
 

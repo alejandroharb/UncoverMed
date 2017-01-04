@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="785115468288-8t3gb7ep8hpmk6fr0ka7lobmrf1go9t1.apps.googleusercontent.com">
+
     <!-- importing Materialize font file -->
     <link href="assets/fonts/roboto/">
     <!-- google fonts -->
@@ -19,10 +23,24 @@
     <!-- publishing css -->
     <link rel="stylesheet" type="text/css" href="assets/css/article.css">
     <!-- font awesome CDN -->
-    <script src="https://use.fontawesome.com/8d2a448a32.js"></script>
+
+  
+  <!-- Firebase Database -->
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+  <!-- JQuery -->
+  <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="assets/javascript/materialize.js"></script>
 
 </head>
 <body>
+    <script src="https://use.fontawesome.com/8d2a448a32.js"></script>
+    <!--  GOOGLE sign-in api functionality -->
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <!-- google identity API for sign-in -->
+
+  <!-- Main Javascript -->
+  <script src="assets/javascript/app.js" type="text/javascript"></script>
     <header>
     <!-- Top Navigation Bar, Transparent -->
       <nav class="transparent">
@@ -58,6 +76,7 @@
         <div class="row">
         <!-- article TITLE -->
           <div class="col s12 m12 l12">
+          <div class="g-signin2" data-onsuccess="onSignIn"></div>
             <div class="article-title">
               <h1>The Subtle and Remarkable Power of Medical Algorithms</h1>
               <div class="author">
@@ -169,14 +188,31 @@
           <!-- Comment Section -->
            <div class="row">
               <form class="col s12">
+                <h4>Leave a Comment</h4>
+                
                 <div class="row">
-                  <h4>Comments</h4>
+                  <div class="col s6">
+                    <label for="name">Name</label>
+                    <input placeholder="Edmund Freud" id="name" type="text" class="validate">
+                  </div>
+                </div>
+                <div class="row">
                   <div class="input-field col s12">
-                    <label for="textarea1">Textarea</label>
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="commentArea">Textarea</label>
+                    <textarea id="commentArea" class="materialize-textarea" placeholder="Your comment goes here"></textarea>
+                    <button class="waves-effect waves-light btn deep-orange darken-3" id="add-comment" type="submit"><i class="material-icons">comment </i>Submit</button>
                   </div>
                 </div>
               </form>
+              <div class="row">
+                <div class="col s12">
+                  <h5>Comments: </h5>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col s12 m8 l8 commentDiv" id="commentDisplay">
+                </div>
+              </div>
             </div>
         </div>
       </div>
@@ -194,11 +230,7 @@
           </div>
         </footer>
 
-  <!-- JQuery -->
-  <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
-  <!-- Compiled and minified JavaScript -->
-  <script src="assets/javascript/materialize.js"></script>
-  <!-- Main Javascript -->
-  <script src="assets/javascript/app.js" type="text/javascript"></script>
+
+
 </body>
 </html>

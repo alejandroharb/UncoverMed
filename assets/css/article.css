@@ -76,29 +76,21 @@ nav ul a{
 }
 /*===Writing Space (publish-space)*/
 .publish-space h4{
-    font-size: 36px;
+    font-size: 32px;
 }
 .publish-space h5{
-    font-size: 28px;
+    font-size: 24px;
 }
 
-.publish-space .article {
-    max-width: 90%;
-    margin-top:0px;
-    margin-right: auto;
-    margin-bottom: 20px;
-    margin-left: auto;
-}
 
 .publish-space .article p{
     text-align: justify;
     font-size: 20px;
     font-family: 'Alegreya Sans', sans-serif;
-    margin:30px auto;
 }
 
 .publish-space .indent {
-    margin-left: 80px;
+    margin-left: 50px;
 }
 
 
@@ -161,4 +153,19 @@ blockquote {
         border-left: none !important;
         font-weight: 300;
         padding-left:20px;
+}
+/*Comment Section*/
+.userName{
+    font-weight: 600;
+    font-size:18px;
+}
+.commentDiv{
+    padding:15px !important;
+    border: 1px solid #EEEEEE;
+    border-radius: 6px;
+}
+.commentSection{
+    margin-left: 15px;
+    background-color:#EEEEEE;
+    border-radius: 3px;
 }
