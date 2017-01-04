@@ -13,10 +13,15 @@ $(document).ready(function(){
     initialDisplay();
     //resets all button colors to inactive, initial color
     function removeBtnsActiveColor(){
-        $('#econBtn').removeClass('deep-orange darken-3').addClass('grey darken-4')
-        $('#techBtn').removeClass('deep-orange darken-3').addClass('grey darken-4')
-        $('#devBtn').removeClass('deep-orange darken-3').addClass('grey darken-4')
-        $('#premedBtn').removeClass('deep-orange darken-3').addClass('grey darken-4')
+        $('#econBtn').removeClass('deep-orange darken-3').addClass('grey darken-4');
+        $('#techBtn').removeClass('deep-orange darken-3').addClass('grey darken-4');
+        $('#devBtn').removeClass('deep-orange darken-3').addClass('grey darken-4');
+        $('#premedBtn').removeClass('deep-orange darken-3').addClass('grey darken-4');
+        //mobile buttons
+        $('#econBtn2').removeClass('deep-orange darken-3').addClass('grey darken-4')
+        $('#techBtn2').removeClass('deep-orange darken-3').addClass('grey darken-4')
+        $('#devBtn2').removeClass('deep-orange darken-3').addClass('grey darken-4')
+        $('#premedBtn2').removeClass('deep-orange darken-3').addClass('grey darken-4')
     }
     //hides topic content for the three other topics, expressed in parameters
     function clearContent(content1, content2, content3){
@@ -47,6 +52,19 @@ $(document).ready(function(){
     });
     $('#techBtn').on('click', function(){
     	topicBtnClick('#techBtn', '#techContent', '#econContent','#devContent','#premedContent')
+    });
+    //click listeners for same buttons, but on mobile
+    $('#premedBtn2').on('click', function(){
+        topicBtnClick('#premedBtn2', '#premedContent', '#techContent','#econContent','#devContent')
+    });
+    $('#devBtn2').on('click', function(){
+         topicBtnClick('#devBtn2', '#devContent','#techContent','#econContent','#premedContent')
+    });
+    $('#econBtn2').on('click', function(){
+        topicBtnClick('#econBtn2', '#econContent','#techContent','#devContent','#premedContent')
+    });
+    $('#techBtn2').on('click', function(){
+        topicBtnClick('#techBtn2', '#techContent', '#econContent','#devContent','#premedContent')
     });
 
       //==================Comment section============
@@ -99,7 +117,7 @@ $(document).ready(function(){
   //comment submit
   $('#commentArea').trigger('autoresize');
   // =============Database===========
-  
+
   //reference to database
   var database = firebase.database();
   //click event for form submit button
@@ -176,7 +194,7 @@ $(document).ready(function(){
         }
       });
     //when user scrolls to height of each 'chapter', table of contents is highlighted
-    //===========condense into function!!========= 
+    //===========condense into function!!=========
     $(window).scroll(function(){
           if ( $(window).scrollTop() > $("#ch1").offset().top) {
           	//adds highlight class when scrolling past chapter
