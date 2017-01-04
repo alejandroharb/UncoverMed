@@ -1,6 +1,24 @@
 $(document).ready(function(){
-    // Initialize collapse button
 
+    //facebook share button
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=536651626524748";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+
+    //Google Analytics
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-81755229-1', 'auto');
+    ga('send', 'pageview');
+    // Initialize collapse button
     // =======HOME PAGE=======
     $(".button-collapse").sideNav();
     //executes to display economics content
@@ -117,17 +135,20 @@ $(document).ready(function(){
   //comment submit
   $('#commentArea').trigger('autoresize');
   // =============Database===========
-
+    //stores name of article from page clicked on
+    var article = $('#articleIdentity').data('name');
+    console.log(article);
   //reference to database
   var database = firebase.database();
+
   //click event for form submit button
   $('#add-comment').on('click', function(){
-  	//stores comment text
+    //stores comment text
   	var comment = $('#commentArea').val().trim();
   	//stores name text
   	var name = $('#name').val().trim();
   	//references comment node in Database
-  	var ref = database.ref('comments');
+  	var ref = database.ref('comments/'+article);
   	//send a new child node to referenced database
   	ref.push({
   		name:name,
@@ -140,8 +161,9 @@ $(document).ready(function(){
   	//prevents html page from reloading after submitting form
   	return false;
   });
+
   //references comments database node
-  var commentsRef = database.ref('comments');
+  var commentsRef = database.ref('comments/'+article);
   //function listens to any child added to node reference
   commentsRef.on('child_added', function(data){
   	//stores data variables from database
@@ -152,7 +174,6 @@ $(document).ready(function(){
   },function(errorObject) {//error handler
 	console.log('Errors handled: '+ errorObject.code);
 	});
-
     // =======PUBLISH PAGE=======
 
     //article table of contents section

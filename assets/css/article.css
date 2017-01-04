@@ -24,7 +24,7 @@ nav{
     box-shadow: none!important;
 }
 nav .brand-logo{
-	display:none !important;
+	display:none;
 }
 nav a{
 	color:white;
@@ -52,7 +52,7 @@ nav ul a{
 }
 @media only screen and (min-width: 992px){
     nav .brand-logo{
-        display:block;
+        display:block !important;
         font-size:2.5rem;
         color:#fff;
     }
@@ -141,6 +141,13 @@ nav ul a{
     margin-left: 50px;
 }
 
+.img-right {
+    float: right;
+    margin-left: 20px;
+}
+a.scrollspy{
+    color:#000;
+}
 
 blockquote {
     font-size: 25px;

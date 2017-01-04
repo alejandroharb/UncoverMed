@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UncoverMed</title>
+    <!-- SEO metaData -->
+    <meta property="og:site_name"    content="UncoverMed" />
+    <meta property="og:type"         content="article" />
+    <meta property="og:url"        content="http://www.uncovermed.com/article-illusions-in-premedicine.html" />
+    <meta property="og:title"        content="Illusions When Pursuing Medicine" />
+
+    <meta property="og:image"        content="http://www.uncovermed.com/assets/img/sight-opening.jpeg" />
+    <meta property="og:image:secure_url"        content="https://www.uncovermed.com/assets/img/sight-opening.jpeg" />
+    <meta property="og:image:type"    content="img/jpg" />
+    <meta property="og:image:width"   content="400" />
+    <meta property="og:image:height"   content="265" />
+
+    <meta property="og:description"  content="5 ways that students wrongly convince themselves that a career in medicine is for them." />
+    <!--
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="785115468288-8t3gb7ep8hpmk6fr0ka7lobmrf1go9t1.apps.googleusercontent.com"> -->
+
+    <!-- importing Materialize font file -->
+    <link href="assets/fonts/roboto/">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poiret+One" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/materialize.css">
+    <!-- MAIN.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- publishing css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/article.css">
+    <!-- font awesome CDN -->
+    <script src="https://use.fontawesome.com/8d2a448a32.js"></script>
+    <!--  GOOGLE sign-in api functionality -->
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    <!-- Firebase Database -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+    <!-- JQuery -->
+    <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="assets/javascript/materialize.js"></script>
+
+
+</head>
+<body>
+<div id="fb-root"></div>
+    <header>
+    <!-- Top Navigation Bar, Transparent -->
+      <nav class="transparent">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo article">Uncover<br>Med</a>
+            <!-- activates mobile icon for slide-out nav bar -->
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+     <!--      <ul id="nav-mobile" class=" left -on-med-and-down nav-links">
+            <li><a href="http://www.uncovermed.com" class="about">About</a></li>
+          </ul> -->
+          <ul id="nav-mobile" class="right -on-med-and-down">
+            <li><a href="#"><i class="fa fa-facebook fa-2x nav-icon" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter fa-2x nav-icon" aria-hidden="true"></i></a></li>
+          </ul>
+          <!-- links for slide-out nav bar for mobile display only -->
+          <ul id= "slide-out" class="side-nav">
+            <li><a href="http://www.uncovermed.com">Home</a></li>
+            <li><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i>Facebook</a></li>
+            <li><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i>twitter</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- ========Main Article======== -->
+    <main>
+      <!-- article wallpaper banner -->
+      <div class="top-banner-img">
+        <img style="background-image:url('assets/img/sight-opening.jpeg')" class="banner-img">
+        <img src="assets/img/sight-opening.jpeg" class="hide">
+      </div>
+      <!-- article container -->
+      <div class="container">
+        <div class="row">
+        <!-- article TITLE -->
+          <div class="col s12">
+            <div id="articleIdentity" data-name="illusions" class="article-title">
+              <h1>Illusions When Pursuing Medicine</h1>
+              <div class="author">
+                <h2>By: <a href="https://www.linkedin.com/in/alejandroharb" target="_blank">Alejandro Harb</a></h2>
+            </div>
+          </div>
+        </div>
+        <!-- Share buttons -->
+        <div class="container">
+          <div class="row share-buttons">
+            <div class="col s4">
+              <!--Start Facebook Share Link Anchor-->
+              <a target="_blank" class="btn btn-sm btn-fill btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.uncovermed.com%2Farticle-illusions-in-premedicine.html&amp;src=sdkpreparse"><i class= "fa fa-facebook"> Share</i></a>
+            </div>
+            <div class="col s4">
+                <!--Start Twitter Share Link Anchor-->
+                <a target="_blank" role="button" class="btn btn-fill btn-sm btn-tweet" href="http://twitter.com/share?text=Share%20your%20thoughts!&url=http://www.uncovermed.com/articl-illusions-premedicine.html&hashtags=healthcare,medicine&via=uncovermed"><i class="fa fa-twitter"> Tweet</i></a>
+            </div>
+            <div class="col s4">
+                <a target="_blank" role = "button" class="btn btn-fill btn-sm btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.uncovermed.com/article-illusions-premedicine.html&title=Illusions%20When%20Pursuing%20Medicine&summary=5%20ways%20that%20students%20wrongly%20convince%20themselves%20that%20a%20career%20in%20medicine%20is%20for%20them.&source=UncoverMed"><i class="fa fa-linkedin"> Share</i></a>
+            </div>
+          </div><!-- end Share Buttons -->
+        </div>
+        <!-- writing content area -->
+        <div class="container">
+          <div class="row publish-space">
+            <div class="col s12 m8 l8 article">
+              <p><a id="ch1" class="section scrollspy"></a> the decision to become a doctor is incredibly important. I was offered admissions to medical schools in Texas, but ultimately made the decision that I would not attend. Making the decision was extremely difficult. I felt profoundly confused for 2 years as I tried to reflect on my doubts for medicine.</p>
+
+              <p>There are a lot of reasons why students choose medicine. They may rationalize a set of reasons for why they should go into the profession, convincing themselves that a medical career will make them happy. Choosing to become a doctor is a monumental life decision, a choice that commits the first half of one’s life, likely comes with a great deal of debt, and <a id="ch2" class="section scrollspy">tends</a> to lock individuals in a particular career track. Here are 5 illusions people believe when choosing Medicine: </p>
+
+              <h2>1. Becoming a doctor is a selfless, altruistic act.</h2>
+
+              <p>Indeed, doctors are in a position to profoundly affect people’s life. With the ability to diagnose and treat, there’s great opportunity to change one’s life for the better. But, becoming a doctor is no more an act of sacrifice for society than it is to be a lawyer who works for human rights, a hospital administrator who keeps the hospital doors open through sound financial management and proper leadership, or an architect who designs eco-friendly buildings.</p>
+
+              <p>The danger in the mentality that the decision to go into medicine is an altruistic act, is that students can fool themselves into thinking that their unhappiness is justified and that it is a part of the selfless act of going into medicine. Rather than assessing one’s true feelings and making a decision based on what fulfills them, students can wrongly persevere down a path that lead to unhappiness. Going into medicine is a selfish decision, and that's ok. We choose the directions of our lives because it will contribute to an enjoyable journey.</p>
+
+              <p>Professionals who work in impactful areas do so because they love aspects of the job itself, and love having it tied to a mission. Most importantly, however, is that the job itself must be enjoyable enough for them to appreciate the journey of contributing to their mission. In medicine, we must have doctors, nurses, and PA’s that are not only passionate for helping people through health, but also love the mechanics of the job and the daily challenges that accompany it. These individuals will thrive in the field they love, and welcome adversity for the opportunity to grow.</p>
+              <img src="assets/img/mountain-climb.jpeg" class="responsive-img" alt="mountain climber looking at mountain">
+
+              <h2><a id="ch3" class="section scrollspy">2.</a> I witnessed illness to someone I love, and I want to be able to do something about similar situations.</h2>
+
+              <p>Inspirations can be powerful and beautiful. They have the power to lead us down different paths in life. Many aspiring doctors choose the field because of an experience of seeing a loved one go through an illness or health trauma, or experienced one themselves. </p>
+
+              <p>As beautiful as inspirations can be, they are only a starting point to making a decision. They should not be the sole basis for a decision made to go into medicine. Inspirations can awaken us to the importance of good health, competent medical care, <a id="ch4" class="section scrollspy">healthy</a> nutrition, or access to healthcare resources. What inspirations fail to reveal to us is how much compatibility we have with a job role and a career lifestyle – the details that will fill every minute on the job.</p>
+
+              <h2>3. I’ll become rich by being a doctor</h2>
+
+              <p>Doctors are quoted to be making average between <a target="_blank" href="http://www.medscape.com/features/slideshow/compensation/2015/public/overview#page=3">$180,000 and $400,000</a> every year. These figures are enough to make anyone consider medicine. Many may calculate how much money one can make in only ten years of being a practicing physician, dreaming about early retirement and fancy dinners by the Eiffel Tower. </p>
+
+              <p>The truth is that doctors rarely get rich. With the great debt and the high cost associated with being a practicing physician, the net income tends to be lower. In addition, doctors work an immense amount of hours each week, that the net amount they get paid per hour tends to be much lower than you may have thought.</p>
+
+              <p>There are economic barriers to amounting riches as a doctor. Political rhetoric and tighter regulation has been <a target="_blank" href="http://www.forbes.com/sites/scottgottlieb/2013/06/28/doctors-will-have-to-take-a-pay-cut-under-obamacare/#71adf647336d">lowering pay</a> for physician health services. Additionally, the job of being a doctor is labor intensive and not easily scalable. In other words, the amount of money earned depends on the number of patients seen and treated. There are a finite number of hours able to be worked in a day, limiting by how much they are able to work and how much can be earned. </p>
+
+              <p>Becoming a doctor should be with the goal in mind to do what you love everyday. Doctors can <a id="ch5" class="section scrollspy">make</a> a comfortable living and one will likely achieve practical financial goals. But, don’t fall under the illusion that being a doctor will grant riches.</p>
+
+              <h2>4. Great job security</h2>
+
+              <p>Job security is often a deciding factor when choosing medicine. After all, there will always be a need for doctors…right? Not necessarily. The accelerating rate of technological advancements have begun to verge on the space once thought to be in most demand and most protected from the dangers of outsourcing. </p>
+
+              <p>Today, the IBM computer, <a target="_blank" href="http://www.ibm.com/watson/health/">Watson</a>, can read 40 million scientific research papers in 15 seconds. Computer algorithms can take the symptoms of a patient, along with their history and compute the probabilities for thousands of diagnoses within seconds. Add to that the advancements in ability to <a target="_blank" href="https://www.technologyreview.com/s/531091/emtech-illumina-says-228000-human-genomes-will-be-sequenced-this-year/">store genomics data and perform data analytics</a>. Clearly, the processing power of the computer far outpaces that of the human brain, and the clinical problem solving opportunities for computers will emerge within the decade.</p>
+
+              <p>Technology will change all industries and impact all job roles. The key is not to base one’s career decisions based on the job security it may provide, but rather, on the enjoyment and mission one derives from it. When such is the case, evolving with the industry will occur organically. In fact, those that love their field will likely welcome <a id="ch6" class="section scrollspy">change</a> as an opportunity to expand their operation and sphere of influence. They will welcome the chance to grow and be more impactful.</p>
+
+              <h2>5. Prestige and Respect</h2>
+
+              <p>Most students will never claim they are going into medicine for the prestige and respect doctors receive. Many truly believe they themselves are going into medicine for the right reasons. This illusion is superficially obvious, but is an illusion for a different reason: students may simply not realize they are attracted to the prestige of the field.</p>
+
+              <p>Seeking prestige and respect is often the subconscious seeking of validation from others – validation of personal worth and value. Our conscious mind cannot access the underlying mechanics of our subconscious mind, and rationalizes our behavior in ways we can understand it, even if it’s not reality<sup><a href="#Wilson">1</a></sup>. For example, someone going into medicine for the approval of their parents may make the rationalization that they love medicine, it’s a great profession, and their parents are wise.</p>
+
+              <p>Peter Diamandis, an extraordinary engineer, physician and entrepreneur who founded the <a target="_blank" href="http://www.xprize.org/">X Prize Foundation</a>, <a target="_blank" href="http://diamandis.com/human-longevity-inc">Human Longevity Inc.</a> and <a target="_blank" href="http://singularityu.org/">Singularity University</a> that work to revolutionize space exploration and human biological enhancement, gave a quintessential answer to a question on what he would tell his 20 year-old self, today. Diamandis stated,</p>
+              <blockquote >“I spent 4 years in medical school to make my mom happy, my dad happy, because I thought I had to do it. [The advice] would have been in my inner dream of opening up space and to focus in doing that…I wasn’t doing it for the right reasons.”<sup><a target="_blank" href="http://fourhourworkweek.com/2015/01/20/elon-musk-and-jeff-bezos/">2</a></sup></blockquote>
+
+              <img src="assets/img/diverging-road.jpg" class="responsive-img" alt="nature road diverges">
+
+              <p>To avoid the lure of medicine’s prestige, we must take a closer look within ourselves. We must analyze our motives and goals, and question our assumptions. How do we feel when family members praise our intellectual abilities when we tell them we want to be doctors? Alternatively, how would you, as students, feel if you declared to your inner circles that you no longer wanted to be a doctor? Would you feel any attack to your worth and feel doubted by others? Would you feel judged by your parents and friends? </p>
+
+              <p>The last question is especially revealing because how we feel that others label us is a projection of our own self-worth projected onto others. If you suddenly feel like your <a id="ch7" class="section scrollspy">parents</a> are judging your worth and intelligence after declaring you will no longer be a doctor, then you have projected your own feelings of lower worth and lower intellect.  </p>
+
+              <h2>Author of a Life</h2>
+
+              <p>Our life, and the amount of enjoyment and fulfillment within it, is our responsibility. It’s easier and less daunting to continue to go about a path without evaluating ourselves and asking the right questions. In doing so, we leave ourselves exposed to a career that neither makes us happy or fulfills us. Fortunately, every day we are presented with the opportunity to honestly evaluate ourselves and our decisions. By living deliberately and being the author of our own lives, we can open up doors to realize our truest potential.</p>
+            </div>
+            <!-- table of contents: materialize scrollspy -->
+            <div class="col hide-on-small-only m4 l4">
+              <ul class="section table-of-contents panel-algorithms" id="info">
+                <li id="index1" ><a href="#ch1">Introduction</a></li>
+                <li id="index2" ><a href="#ch2">Becoming a doctor is a selfless, altruistic act</a></li>
+                <li id="index3" ><a href="#ch3">An Experience with Illness Has Inspired Me to Medicine</a></li>
+                <li id="index4" ><a href="#ch4">I’ll become rich by being a doctor</a></li>
+                <li id="index5" ><a href="#ch5">Great job security</a></li>
+                <li id="index6" ><a href="#ch6">Prestige and Respect</a></li>
+                <li id="index7" ><a href="#ch7">Author of a Life</a></li>
+              </ul>
+            </div>
+            <!-- Works Cited -->
+            <div class="col s12 m8 l8 citation">
+              <h3>Citations</h3>
+              <p><a id="Wilson">1.</a> Wilson, Timothy D. Strangers to Ourselves: Discovering the Adaptive Unconscious. 2002. The Belknap Press of Harvard University Press. Cambridge, Massachusetts. Print.</p>
+
+              <p>2. Tim Ferris Show. “How to Think Like Elon Musk and Jeff Bezos. Interview. 1:12 – 1:13.</p>
+            <!-- Comment Section -->
+            <div class="container">
+             <div class="row">
+                <form class="col s12">
+                  <h4>Leave a Comment</h4>
+                  <!-- google sign-in button -->
+                  <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
+                  <div class="row">
+                    <div class="col s6">
+                      <label for="name">Name</label>
+                      <input placeholder="Edmund Freud" id="name" type="text" class="validate">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <label for="commentArea">Textarea</label>
+                      <textarea id="commentArea" class="materialize-textarea" placeholder="Your comment goes here"></textarea>
+                      <button class="waves-effect waves-light btn deep-orange darken-3" id="add-comment" type="submit"><i class="material-icons">comment </i>Submit</button>
+                    </div>
+                  </div>
+                </form>
+             </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                  <div class="col s12">
+                    <h5>Comments: </h5>
+                  </div>
+                </div>
+                <div class="row ">
+                  <div class="col s12 m8 l8 commentDiv" id="commentDisplay">
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer center-align grey darken-1">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h5 class="white-text">UncoverMed</h5>
+                <p class="grey-text text-lighten-4">By: Alejandro Harb</p>
+                <p>© 2016 Copyright Content</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+    <!-- Main Javascript -->
+    <script src="assets/javascript/app.js" type="text/javascript"></script>
+
+</body>
+</html>
