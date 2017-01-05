@@ -112,14 +112,14 @@ ul.buttons{
 .main-article-title{
     font-family: 'Poiret One', cursive;
     width: 100%;
-    z-index: 100000;
+    z-index: 100;
     position: relative;
     display: block;
     margin-top: -155px;
     background-color: rgba(0, 0, 0, 0.47);
     color: #fff;
     font-weight: bold;
-    font-size: 33px;
+    font-size: 28px;
     padding: 24px 10px;
     text-align: center;
 }
