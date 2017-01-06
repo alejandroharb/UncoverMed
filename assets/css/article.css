@@ -217,7 +217,7 @@ blockquote {
 }
 .panel-fixed{
     position:fixed;
-    top:60px;
+    top:0px;
 }
 .table-of-contents a.active, .table-of-contents a:hover {
         border-left: none !important;

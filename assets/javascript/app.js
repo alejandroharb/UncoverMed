@@ -207,10 +207,10 @@ $(document).ready(function(){
         	$('nav ul a').css('color', '#fff');
         	$('nav a').css('color', '#fff');
         }
-        if ($(window).scrollTop() > 640){
+        if ($(window).scrollTop() > $('#ch1').offset().top){
           $('#info').addClass('panel-fixed');
         }
-        if ($(window).scrollTop() < 640){
+        if ($(window).scrollTop() < $('#ch1').offset().top){
           $('#info').removeClass('panel-fixed')
         }
       });
