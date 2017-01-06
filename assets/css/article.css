@@ -148,6 +148,16 @@ nav ul a{
 a.scrollspy{
     color:#000;
 }
+.tooltipped{
+    font-weight: bold;
+    color: #e65100;
+    text-decoration: underline;
+}
+
+p.img-caption{
+    font-size: 12px !important;
+    margin: 0 60px;
+}
 
 blockquote {
     font-size: 25px;

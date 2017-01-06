@@ -96,41 +96,43 @@ $(document).ready(function(){
   };
   firebase.initializeApp(config);
   //user authentication
-  var provider = new firebase.auth.GoogleAuthProvider();
-  var provider = new firebase.auth.FacebookAuthProvider();
-  //Google API
-  function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
+  // var provider = new firebase.auth.GoogleAuthProvider();
+  // var provider = new firebase.auth.FacebookAuthProvider();
+ //  //=========Google API==========
 
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        console.log("ID Token: " + id_token);
-      };
+ //  function onSignIn(googleUser) {
+ //        // Useful data for your client-side scripts:
+ //        var profile = googleUser.getBasicProfile();
+ //        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+ //        console.log('Full Name: ' + profile.getName());
+ //        console.log('Given Name: ' + profile.getGivenName());
+ //        console.log('Family Name: ' + profile.getFamilyName());
+ //        console.log("Image URL: " + profile.getImageUrl());
+ //        console.log("Email: " + profile.getEmail());
 
-  //sign in google with popup window
-  firebase.auth().signInWithPopup(provider).then(function(result) {
-	  // This gives you a Google Access Token. You can use it to access the Google API.
-	  var token = result.credential.accessToken;
-	  // The signed-in user info.
-	  var user = result.user;
-	  // ...
-	}).catch(function(error) {
-	  // Handle Errors here.
-	  var errorCode = error.code;
-	  var errorMessage = error.message;
-	  // The email of the user's account used.
-	  var email = error.email;
-	  // The firebase.auth.AuthCredential type that was used.
-	  var credential = error.credential;
-	  // ...
-	});
+ //        // The ID token you need to pass to your backend:
+ //        var id_token = googleUser.getAuthResponse().id_token;
+ //        console.log("ID Token: " + id_token);
+ //      };
+
+ //  //sign in google with popup window
+ //  firebase.auth().signInWithPopup(provider).then(function(result) {
+	//   // This gives you a Google Access Token. You can use it to access the Google API.
+	//   var token = result.credential.accessToken;
+	//   // The signed-in user info.
+	//   var user = result.user;
+	//   // ...
+	// }).catch(function(error) {
+	//   // Handle Errors here.
+	//   var errorCode = error.code;
+	//   var errorMessage = error.message;
+	//   // The email of the user's account used.
+	//   var email = error.email;
+	//   // The firebase.auth.AuthCredential type that was used.
+	//   var credential = error.credential;
+	//   // ...
+	// });
+
 
   //comment submit
   $('#commentArea').trigger('autoresize');
@@ -283,6 +285,12 @@ $(document).ready(function(){
             $('#index11').addClass('highlight');
           }
           if ( $(window).scrollTop() < $("#ch11").offset().top) {
+            $('#index11').removeClass('highlight');
+          }
+          if ( $(window).scrollTop() > $("#ch12").offset().top) {
+            $('#index11').addClass('highlight');
+          }
+          if ( $(window).scrollTop() < $("#ch12").offset().top) {
             $('#index11').removeClass('highlight');
           }
     });
