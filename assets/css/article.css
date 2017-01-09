@@ -86,7 +86,7 @@ nav ul a{
         right:0;
     }
     .top-banner-img img{
-        height: 175px;
+        height: 175px !important;
     }
 }
 /*======Article========= */
@@ -167,15 +167,17 @@ blockquote {
     h4{
         font-size: 28px;
     }
-    .publish-space .article p{
-        font-size: 1.4rem;
-    }
     .publish-space h5 {
         font-size: 20px;
         font-weight: 500;
     }
     .publish-space .indent {
         margin-left: 40px;
+    }
+}
+@media (min-width: 319px) and (max-width: 737px){
+    .publish-space .article p{
+        font-size: 17px;
     }
 }
 /*==citation space==*/
