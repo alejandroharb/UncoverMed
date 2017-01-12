@@ -121,6 +121,21 @@ ul.buttons{
     padding: 24px 10px;
     text-align: center;
 }
+
+.card.horizontal .card-image {
+    max-width: 40%;
+}
+.card-content h3{
+
+    font-size: 23px;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.card .card-content {
+    color: #000;
+    padding:14px;
+}
 a.content{
     margin-bottom: 50px;
     display: block;
@@ -166,6 +181,18 @@ strong {
     .card .card-image img{
         height:auto !important;
     }
+    .card-content h3{
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    .card .card-content p {
+        display:none;
+    }
+    .card .card-content {
+        padding:6px;
+    }
 }
 @media (min-width: 738px) and (max-width: 1025px){
     a.content {
@@ -173,5 +200,14 @@ strong {
     }
     .main-article-title{
         font-size: 24px;
+    }
+    .card .card-content p {
+        display:none;
+    }
+    .card-content h3{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 700;
     }
 }
